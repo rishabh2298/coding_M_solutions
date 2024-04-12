@@ -1,0 +1,18 @@
+
+JDBC Driver:-
+=============
+
+JDBC stands for Java DataBase Connection and every database software uses
+.jar file for making connection between client software and database.
+
+this .jar file is a zip file that contains all the files in the form of
+.class which is class and interface required for making connection and
+communicate among them.
+
+for that we need to install required driver software from internet of
+database with which we want to make connection
+
+eg: mysql	= mysql-connector.jar
+	oracle 	= ojdbc6.jar
+	progress= progress.jar
+	

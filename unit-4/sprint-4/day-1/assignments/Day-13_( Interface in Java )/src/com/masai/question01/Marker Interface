@@ -1,0 +1,15 @@
+
+Marker Interface : # When an interface is empty then it is called a tag or marker interface.
+
+				   # It is used for storing different class objects for further use and it has some special 
+				     functionality.
+				     
+				   # We can define a marker interface according to our need, but in Java we have some predefined marker
+				     interfaces;
+				   
+Ex = java.io.Serialization :- It is used for taking an object out of the ram at particular running time and retrieving it 
+							  when needed (like in game to save different levels).
+							  
+	 java.lang.Clonable :- It is used for cloning purpose.
+	 
+	 etc... and many more.  

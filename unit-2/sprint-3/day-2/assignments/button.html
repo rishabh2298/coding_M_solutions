@@ -1,0 +1,59 @@
+<!-- DOM-2 (buttom using only html & css) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM-II (button)</title>
+</head>
+<style>
+    #container{
+        width: 1000px;
+        display: grid;
+        grid-template-columns: repeat(9,1fr);
+        grid-template-rows: 40px;
+        gap:10px;
+        align-items: center;
+        margin: 40px;
+    }
+    .same{
+        height:100%;
+        color:white;
+        background-color: #027afe;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+    }
+    #container>button:nth-child(2){background-color: #6b747c;}
+    #container>button:nth-child(3){background-color: #27a643;}
+    #container>button:nth-child(4){background-color: #db3544;}
+    #container>div:nth-child(5){
+        color:black;
+        background-color: #febf07;
+    }
+    #container>button:nth-child(6){background-color: #12a1b7;}
+    #container>button:nth-child(7){
+        color:black;
+        background-color: #f8f9fa;
+    }
+    #container>button:nth-child(8){background-color: #343a3f;}
+    #container>button:nth-child(9){
+        color:#0c7dfe;
+        background-color: #fefeff;}
+</style>
+<body>
+    <div id="container">
+        <button class="same">Primary</button>
+        <button class="same">Secondary</button>
+        <button class="same">Success</button>
+        <button class="same">Danger</button>
+        <button class="same">Warning</button>
+        <button class="same">Info</button>
+        <button class="same">Light</button>
+        <button class="same">Dark</button>
+        <button class="same">Link</button>
+    </div>
+</body>
+</html>

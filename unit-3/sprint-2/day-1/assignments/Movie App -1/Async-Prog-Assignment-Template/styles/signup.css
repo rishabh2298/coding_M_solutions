@@ -1,0 +1,62 @@
+ /* Navbar Section  */
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+ #navbar{
+     height:40px;
+    width:1200px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row-reverse;
+    margin:10px auto;
+ }
+ #navbar a{
+    text-decoration: none;
+    color:black;
+    font-weight: 700px;
+} 
+ #navbar>div{
+     height:100%;
+     width:300px;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     margin-right: 50px;
+ }
+ #navbar h4:hover{
+     cursor:pointer;
+     color:blue;
+ }
+
+ /* form section  */
+
+ #signup-form-div{
+     height:320px;
+     width:300px;
+     border-radius: 10px;
+     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+     margin:100px auto;
+     text-align: center;
+ }
+ form{
+     width:60%;
+     margin: 15px auto;
+     display: flex;
+     flex-direction: column;
+ }
+
+ input{
+     border-radius: 2px;
+     padding:5px;
+     margin-top: 20px;
+     border:1px solid gray;
+ }
+ #submit{
+     width:120px;
+     color:white;
+     background-color:teal;
+     border-radius: 5px;
+     margin:20px auto;
+ }

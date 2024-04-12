@@ -1,0 +1,8 @@
+
+No this code will not compile successfully.
+
+1. Because whenever we initialize any instance variable (as a member of interface) in interface then it will always be in 
+   state of (public static final) means we can access that variable from class which is implementing it but we can assign 
+   a new value to that variable as it is using "final" keyword which was assign to it by compiler.
+
+2. It is trying to access that without creating object of child class. So also it wont be able to get access.

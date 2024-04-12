@@ -1,0 +1,26 @@
+
+#container{
+    width:1200px;
+    background-color: rgba(62, 207, 188, 0.533);
+    margin:auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:30px;
+}
+.cards{
+    height:380px;
+    border:2px solid black;
+    background-color: antiquewhite;
+}
+.cards>h3{
+    margin-left: 20px;
+}
+.cards img{
+    height:60%;
+    width:100%;
+}
+.cards div{
+    display: flex;
+    justify-content: space-between;
+    padding:10px 30px;
+}

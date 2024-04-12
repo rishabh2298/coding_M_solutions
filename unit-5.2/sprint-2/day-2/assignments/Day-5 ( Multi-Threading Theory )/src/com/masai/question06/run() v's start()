@@ -1,0 +1,7 @@
+
+If we call run() method directly instead of start() method then it is simply calling a method by main
+thread and there will be no thread run in parallel. Is is just normal method calling.
+
+But if we call a start() method then it will be called by thread class object which will take object 
+of that class in it's constructor which will implements runnable interface and a separate parallel 
+thread will run with default main thread of our java application.

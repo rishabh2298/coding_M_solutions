@@ -1,0 +1,113 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+    background-color: var(--light_grey);
+}
+:root{
+    --light_grey:#e7e9eb;
+    --light_green:#36b89e5d ;
+    --light_nav:rgb(35, 157, 143);
+}
+body{
+    /* position: relative; */
+    width:1300px;
+    border:1px solid black;
+    margin:10px auto;
+    background-color: var(--light_green);
+}
+#navbar{
+    position:sticky;
+    top:0;
+    height:50px;
+    border:1px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    margin:20px;
+    background-color: var(--light_nav);
+}
+#nav1{
+    margin-left: 10px;
+}
+#nav1>p{
+    font-size: 40px;
+    font-weight: 900;
+    color:rgb(250, 217, 217);
+    background-color: var(--light_nav);
+}
+#nav2{
+    width:500px;
+    display: flex;  
+    justify-content: space-around;
+    background-color: var(--light_nav);
+}
+#nav2>input{
+    border-radius: 7px;
+    width:250px;
+    padding:3px 15px;
+    background-color: whitesmoke;
+}
+#sort{
+    width:100px;
+    border-radius: 3px;
+    border: 1px solid black;
+}
+#sort:hover{
+    cursor: pointer;
+    color:white;
+    background-color: darkslategrey;
+}
+#filter{
+    width:60px;
+    border-radius: 3px;
+    border:1px solid black;
+}
+#filter:hover{
+    cursor: pointer;
+    color:white;
+    background-color: darkslategrey;
+}
+#container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap:30px;
+    margin:30px;
+}
+.box{
+    border:2px solid black;
+    background-color: rgb(236, 189, 173);
+    height:450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.box:hover{
+    cursor:pointer;
+    height:452px;
+    width:295px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.box>h3{
+    margin-left: 10px;
+    background-color: rgb(236, 189, 173);
+}
+.box>img{
+    height:300px;
+    width:100%;
+}
+.box>div{
+    display: flex;
+    justify-content: space-around;
+}
+.box div,.box h4{
+    background-color: rgb(236, 189, 173)
+}
+.recomend{
+    width:120px;
+    margin: -25px -20px -20px -15px;
+    padding:5px;
+    color:white;
+    background-color: blue; 
+}

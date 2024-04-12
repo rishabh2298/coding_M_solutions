@@ -1,0 +1,20 @@
+
+Maven Life Cycle :-
+===================
+
+ 1.	Compile : In this phase maven check wheather our application is compling properly of have some syntactical or exceptions 
+ 			  which are not handled properly.
+ 			 
+ 2. test Compile : In this phase it test's the compile file for it's working where all the linking and inner connections 
+ 				   among files is working fine or not.
+ 				   
+ 3. test : During this phase whatever test-cases we are assign to our application it will make our application through it.
+ 
+ 4. packing : It will wrap our .class files into a .jar, .war or .ear etc in zip form for further use.
+ 
+ 5. install : It will install our zip file of .jar in local repository for future reference use or in central and server 
+ 			  repository.
+ 
+ 6. deploy : It will then deploy our application for use.
+ 
+ 7. clean : it will clean all the life cycle command and make it ready for next use.

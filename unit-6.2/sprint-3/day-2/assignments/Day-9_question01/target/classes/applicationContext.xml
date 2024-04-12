@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:context="http://www.springframework.org/schema/context"
+  xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+
+
+	  <!-- Tourists -->
+	  <bean id="tourist01" class="com.masai.model.Tourist">
+		  <constructor-arg name="name" value="Rajesh Kapoor" />
+		  <constructor-arg name="age" value="45" />
+		  <constructor-arg name="aadhar_id" value="234534341231" />
+	  </bean>
+	
+	  
+	  <!-- Holiday Packages -->
+	  <bean id="dateFormater" class="java.text.SimpleDateFormat">
+	  	   <constructor-arg value="dd-MM-yyyy" />
+	  </bean>
+	  <bean id="package01" class="com.masai.model.HolidayPackage">
+	  	  <property name="package_name" value="Way to Hawai" />
+	  	  <property name="tourist" ref="tourist01" />
+	  	  <property name="package_expiry">
+	  	  	 <bean factory-bean="dateFormater" factory-method="parse">
+	  	  	  	 <constructor-arg value="28-02-2023" />
+	  	  	 </bean>
+	  	  </property>
+	  	  <property name="package_price" value="28000" />
+	  </bean>
+	  
+</beans>
+

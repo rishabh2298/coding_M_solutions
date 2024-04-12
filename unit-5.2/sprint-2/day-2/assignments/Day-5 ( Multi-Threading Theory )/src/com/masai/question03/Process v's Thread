@@ -1,0 +1,24 @@
+
+Process =>	# When an application is execute it will create a seperate area in memory that is called 
+			  Process based multi-tasking.
+			  
+			# Each process has an address in memory. In other words, each process allocates a separate memory area.
+			
+			# A process is heavyweight.
+			
+			# The cost of communication between the process is high.
+
+			# Switching from one process to another requires some time for saving and loading registers, memory maps,
+			  updating lists, etc.
+			
+			
+Thread =>	# When an application is running there are multiple threads are running simultaneously inside
+			  that process(application) which is sub thread of process and this are called Thread based Multitasking.
+			  
+			# Threads share the same address space.(a thread is a part of a process)
+			
+			# A thread is lightweight.
+			
+			# The cost of communication between the thread is low.
+			
+			  

@@ -1,0 +1,36 @@
+
+Statement:-
+===========
+
+# It is used when required a single time use of sql statement.
+
+# It is faster as compare to Prepared Statement.
+
+# It is difficult when use values in concatenation form.
+
+# It does not support placeholder inputs.
+
+# If there is multiple data retrival command then it will take time
+  as compare to Prepared Statement. 
+  
+  
+  
+Prepared Statement :-
+=====================
+
+# It is best to use when multiple times need to use same sql statement.
+(like = select * from emp)
+
+# It is compatible with placeholder values so that we can write sql
+statement without concatenation.
+
+# It implements Statement Interface so it has accessibility of all the
+Statement methods along with it's specific methods.
+
+
+
+
+
+
+
+

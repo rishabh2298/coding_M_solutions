@@ -1,0 +1,24 @@
+
+POM.xml file :-
+==============
+
+# 	POM is stands for Project Object Model and this file contains information about project and configuration
+   	information of maven to build project.
+ 
+   
+Properties
+==========
+
+1. This file is used by maven before before executing the application.
+
+2. It contains description of :-
+
+	a. project : It is root element of pom.xml file
+
+	b. model version : This is version of model version of maven
+
+	c. artifactId : this is id of project and it is either produced by project or sometimes used by project
+					for getting jar files of other projects.
+
+	e. version : this is version of artifact id under that group given.
+					

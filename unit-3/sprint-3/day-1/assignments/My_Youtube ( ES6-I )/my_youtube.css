@@ -1,0 +1,93 @@
+
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+body{
+    position:relative;
+    /* border:1px solid black; */
+    width:1250px;
+    margin:20px auto;
+}
+#navbar{
+    position: sticky;
+    top:2px;
+    border:1px solid black;
+    border-radius: 8px;
+    background-color: rgb(204, 236, 225);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 20px;
+    margin-bottom: 30px;
+}
+#navbar>img{
+    height:50px;
+    width:80px;
+    border-radius: 20px;
+}
+#query{
+    width:220px;
+    border-radius: 5px;
+    padding:4px 10px;
+}
+#query+button{
+    height:25px;
+    width:80px;
+    border-radius: 3px;
+}
+#query+button:hover{
+    color:white;
+    background-color: darkcyan;
+    height:30px;
+    width:85px;
+    cursor: pointer;
+}
+#navbar button+button{
+    height:25px;
+    width:50px;
+    border-radius: 3px;
+}
+#navbar button+button:hover{
+    color:white;
+    background-color: darkcyan;
+    height:30px;
+    width:55px;
+    cursor: pointer;
+}
+#navbar>div{
+    width:400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+  /* After Data  Append Section  */
+
+#container{
+    /* border:1px solid black; */
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap:30px;
+    background-color: rgba(247, 221, 216, 0.661);
+}
+.video{
+    border:1px solid black;
+    height:230px;
+}
+.video:hover{
+    font-size: 14px;
+    cursor:pointer;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: rgb(194, 214, 207);
+    padding:10px;
+}
+.video>img{
+    height:60%;
+    width:100%;
+}
+.video>h4{
+    font-size: 18px;
+    margin:5px;
+}

@@ -1,0 +1,33 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+body{
+    border:1px solid black;
+    width:1000px;
+    margin:20px auto;
+}
+#container{
+    border:1px solid black;
+}
+table{
+    width:100%;
+    text-align: center;
+}
+th{
+    font-size: 20px;
+    color:blue;
+    background-color: rgb(150, 197, 104);;
+}
+td{
+    background-color:antiquewhite;
+}
+tr>td:last-child:hover{
+    color:white;
+    background-color: red;
+}
+img{
+    height:50px;
+    width:70px;
+}

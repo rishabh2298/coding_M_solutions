@@ -1,0 +1,7 @@
+package com.masai.model;
+
+public enum Month {
+	
+	JANUARY,FEBURARY,MARCH,APRIL,MAY,JUNE,JULY,AUGUST,SEPTEMBER,OCTUBER,NOVEMBER,DECEMBER
+
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+    <style>
+        #counter{
+            display: flex;
+        }
+        #count{
+            font-size: 30px;
+            margin:25px;
+        }
+    </style>
+</head>
+<body>
+    <div id="counter">
+        <h1>Counter :-</h1>
+        <h2 id="count"></h2>
+    </div>
+</body>
+</html>
+
+<script>
+    count()
+    function count(){
+        let count=0;
+        id=setInterval(function(){
+            if(count===10){
+                clearInterval(id);
+            }
+            let h2=document.querySelector("#count")
+            h2.innerText=count++;
+        },1000)
+    }
+</script>

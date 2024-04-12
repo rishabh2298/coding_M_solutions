@@ -1,0 +1,16 @@
+
+Multithreading=> #	Multithreading is a programming concept in which the application can create a small unit of tasks to execute in
+					parallel. If you are working on a computer, it runs multiple applications and allocates processing power to them. A
+					simple program runs in sequence and the code statements execute one by one. This is a single-threaded application.
+					But, if the programming language supports creating multiple threads and passes them to the operating system to run
+					n parallel, it’s called multithreading.
+					
+				
+Advantages Multithreading:
+
+# It doesn't block the user because threads are independent and you can perform multiple operations at the
+  same time.
+
+# You can perform many operations together, so it saves time.
+
+# Threads are independent, so it doesn't affect other threads if an exception occurs in a single thread.

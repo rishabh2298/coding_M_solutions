@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Closer</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin:40px 60px;
+        }
+        #query{
+            width:400px;
+            padding:5px;
+        }
+        #movies{
+            height:250px;
+            width:400px;
+            border:1px solid black;
+            overflow: scroll;
+            background-color: rgba(103, 191, 238, 0.241);
+            padding:10px;
+        }
+        #movies>div{
+            display: flex;
+            gap:20px;
+            background-color: rgba(255, 234, 0, 0.297);
+            margin:10px 0;
+        }
+        #movies img{
+            height:120px;
+            width:120px;
+        }
+        #movies h3{
+            width:150px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Closer</h1>
+    <input oninput="debounce(main,800)" id="query" type="text" placeholder="Search....">
+    <div id="movies">
+        <!-- Append Here -->
+    </div>
+</body>
+</html>
+<script src="closer.js" ></script>

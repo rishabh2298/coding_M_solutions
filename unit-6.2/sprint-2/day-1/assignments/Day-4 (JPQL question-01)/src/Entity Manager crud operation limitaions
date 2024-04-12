@@ -1,0 +1,6 @@
+
+1.	We can't retrieve data according to our condition because with this we have to use
+	find() method which will give all data related to primary key.
+	
+2. 	Here we can't get list of result because find() method return single result. For these 
+	we have to use JPQL.

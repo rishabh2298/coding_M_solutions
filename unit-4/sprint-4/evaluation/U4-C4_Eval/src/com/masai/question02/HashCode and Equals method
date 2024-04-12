@@ -1,0 +1,64 @@
+
+Equals Method() :-# This equals method is basically belongs to java.lang.Object class whose function is to check weather the 
+				  two supplied objects are lexagraphically equal or not that is there hashcode is same or not.
+				
+				# For our requirement we override this equal method in various classes according to our need. like if we want
+				  to check for content similarity (like in String class) or if we want to check for object quality.
+				  In case of object created by "new" operator we override equals method to check it for logically equal or
+				  not.
+				  
+				# In case of collection classes it is call by default when we call "add()" method to check weather we are 
+				  inserting same type of object or not. (in generic type).
+				  
+				# This equals method is in contract with "hashCode()" method. When override equals method we should have 
+				  to override hashCode() method also, both will work simultaneously. 
+				  
+				# This method is also have major use in comparing content of two strings. And also for check logical equality
+				  of two objects of collection class.
+				  
+				  
+
+HashCode Method() :-# This method is used to check for objects hashcode that weather does it similar to other object that has been
+					  added to the collection or not.
+					
+					# it is mostly used in Hash-Map to make all the "key" unique in the collection of key-value pair.
+					
+					# Ex = In case of HashSet class of set interface it will convert the large hashcode to the range of 
+					   	   1-16 as it contain only 16 value in first, and increase to double when size limit get crossed.
+						
+					# So we can generate different hashcode according to our need like of name,roll number, marks etc.
+					 
+
+
+
+eg 1.:- int num = 3248234767       // hashcode of any object.
+	 	int HashCode(num);			// return small hash code value.
+	 
+	 	
+	 	
+	 	
+eg 2. :- Example of equals() and hashCode() method.
+
+	public int hashCode() {
+		return Objects.hash(bookId);
+	}
+
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Book other = (Book) obj;
+		return bookId == other.bookId;
+	}		 
+						 
+						 
+						 
+						 
+						 
+						 
+						 
+						 
+						 

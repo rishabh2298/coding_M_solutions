@@ -1,0 +1,64 @@
+
+Comparator =>	# It belongs to java.util package.
+----------
+				# With the help of this we can create sorting conditions ( more than one sorting type )
+				
+				# This is a interface which create outside of class.So, can be use for .class file (byte
+				code) also.
+				
+				# This has only one abstract method. 
+				i.e, public int compare(Object o1, Object o2).
+				
+Ex=> 
+
+public class Demo implements Comparator<Student> {
+	
+	public int compare(Object o1, Object o2){
+		
+		Student s1 = (Student)o1;
+		Student s2 = (Student)o2;
+		
+		return s1.getMarks()>s2.getMarks() ? +1: -1;
+	}
+	
+}
+
+
+
+Comparable =>	# It belongs to java.util package.
+----------
+				# This will implements in that class whose generics type is using or for which we want
+				  to create sorting technique.
+				  
+				# In this we can create only one sorting technique.
+				
+				# this is used in TreeSet and TreeMap.
+				
+Ex =>
+
+public Student implements Comparable {
+
+	public int compareTo(Object o1){
+		
+		Student s1 = this;
+		Student s2 = (Student)o1;
+		
+		return s1.getMarks() > s2.getMarks() ? +1: -1;
+		
+	}
+
+}
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+
+

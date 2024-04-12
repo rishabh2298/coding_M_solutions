@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Buffer</title>
+  </head>
+  <body>
+    <img
+      id="buffer"
+      src="https://c.tenor.com/K2UGDd4acJUAAAAM/load-loading.gif"
+    />
+  </body>
+</html>
+
+<script>
+  function bankServer() {
+    return true;
+  }
+
+  let payment = new Promise(function (resolve, reject) {
+    let check = bankServer();
+
+    setTimeout(function () {
+      if (check) {
+        resolve("Payment Successful");
+      } else {
+        reject("Try Again Later !");
+      }
+    }, 3000);
+  });
+
+  let image= document.getElementById("buffer");
+
+  payment.then(function(resolve){
+      image.src="https://c.tenor.com/xVfFIHxAzW4AAAAC/success.gif"
+      console.log(resolve)
+  })
+
+  payment.catch(function(reject){
+      image.src="https://c.tenor.com/flmQIupAKBkAAAAC/steven-he-failure.gif"
+      console.log(reject)
+  })
+</script>

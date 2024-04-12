@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<beans xmlns="http://www.springframework.org/schema/beans"
+	    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	    xsi:schemaLocation="http://www.springframework.org/schema/beans
+	        https://www.springframework.org/schema/beans/spring-beans.xsd">
+	   
+	   
+	   <bean id="developer1" class="com.masai.model.Developer">
+	   		<property name="id" value="11" />
+	   		<property name="name" value="Raju" />
+	   		<property name="age" value="23" />
+	   		<property name="noOfProjectsDone" value="4" />
+	   		<property name="email" value="raju@gmail.com" />
+	   		<property name="mobile" value="89845 34343" />
+	   </bean>
+	   
+	   
+	   <bean id="developer2" class="com.masai.model.Developer">
+	   		<property name="id" value="12" />
+	   		<property name="name" value="Rajesh" />
+	   		<property name="age" value="24" />
+	   		<property name="noOfProjectsDone" value="2" />
+	   		<property name="email" value="rajesh@gmail.com" />
+	   		<property name="mobile" value="99845 34343" />
+	   </bean>
+	   
+	   
+	   <bean id="developer3" class="com.masai.model.Developer">
+	   		<property name="id" value="13" />
+	   		<property name="name" value="Hajju" />
+	   		<property name="age" value="27" />
+	   		<property name="noOfProjectsDone" value="14" />
+	   		<property name="email" value="hajju@gmail.com" />
+	   		<property name="mobile" value="09845 34343" />
+	   </bean>
+	   
+	   
+	   <bean id="developer4" class="com.masai.model.Developer">
+	   		<property name="id" value="14" />
+	   		<property name="name" value="Ajay" />
+	   		<property name="age" value="20" />
+	   		<property name="noOfProjectsDone" value="1" />
+	   		<property name="email" value="ajay@gmail.com" />
+	   		<property name="mobile" value="88845 33454" />
+	   </bean>
+	   
+	   
+	   <bean id="developer5" class="com.masai.model.Developer">
+	   		<property name="id" value="15" />
+	   		<property name="name" value="Hari" />
+	   		<property name="age" value="33" />
+	   		<property name="noOfProjectsDone" value="20" />
+	   		<property name="email" value="hari@gmail.com" />
+	   		<property name="mobile" value="99945 38763" />
+	   </bean>
+	        	
+	    
+	    
+	    
+	    
+	    
+	    
+	    <bean id="project1" class="com.masai.model.Project">
+	    	<property name="id" value="21" />
+	    	<property name="name" value="myntra.com" />
+	    	<property name="duration" value="jan-feb" />
+	    </bean>
+	        	
+	    <bean id="project2" class="com.masai.model.Project">
+	    	<property name="id" value="22" />
+	    	<property name="name" value="netflix.com" />
+	    	<property name="duration" value="march-jul" />
+	    </bean>
+	        	
+	    <bean id="project3" class="com.masai.model.Project">
+	    	<property name="id" value="21" />
+	    	<property name="name" value="buffer.com" />
+	    	<property name="duration" value="feb-march" />
+	    </bean>
+	    
+	    
+	    
+	    
+	    
+	    
+	    <bean id="developerService" class="com.masai.services.DeveloperService">
+	    	
+	    	<property name="projectMap">
+	    		<map>
+	    			<entry key-ref="developer5" value-ref="project2" />
+	    			<entry key-ref="developer2" value-ref="project1" />
+	    			<entry key-ref="developer1" value-ref="project3" />
+	    		</map>
+	    	</property>
+	    	
+	    	<property name="developerList">
+	    		<list>
+	    			<ref bean = "developer1" />
+	    			<ref bean = "developer2" />
+	    			<ref bean = "developer3" />
+	    			<ref bean = "developer4" />
+	    			<ref bean = "developer5" />
+	    		</list>
+	    	</property>
+	    	
+	    </bean>
+	        	
+	        	
+	</beans>

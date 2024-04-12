@@ -1,0 +1,16 @@
+
+Priority Queue() =>	#	It is used when we want to represent elements prior to processing.
+					#	It does not contain any null value.
+					#	If we want to add any object then that object class must implements comparable
+						or comparator interface for sorting.
+					#	If we call this queue by reference variable then it give unorganized order, So,
+						to get organized way of queue we should use ( peek(), poll() and remove() )
+						methods.
+						
+				
+LinkedList() =>	#	It is a class of List Interface and it works on zero based index value.
+				#	It is best if we want to add or remove objects in middle of list on frequently
+					basis.
+				#	It also implements Dequeue Interface after java 1.5v so it also use for queue
+					operations.
+				#	It is non-synchronized so it work fast as compare to synchronized classes.

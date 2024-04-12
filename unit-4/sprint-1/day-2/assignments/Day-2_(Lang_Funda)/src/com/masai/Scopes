@@ -1,0 +1,24 @@
+Instance Variable :-1.When declaration and assingment of variable is done as a member of class
+					  and not a method, then that type of variable is called instance variable.
+					2. This variable is non-static type variable.
+					3. It will be available for all the methods and variables which are members of
+					   that particular class.
+					  
+Local Variable :- 1. When declaration and assignment of variable is done inside a particular method,
+					 then that type of variable is called Local variable.
+				  2. This variable is non-static type variable.
+				  3. It will be available only inside that method in which it is declared.
+				  4. We can't use local variable outside that block neither as class member nor as
+				     other method variable.
+
+Ex :- public class Scopes{
+			
+			int a = 40;    -------> instance variable (non-static variables)
+			char b = 'G';			
+			
+			public static void main(){
+				
+				int c = 80;   --------> local varible ( only availabe inside this method )
+				float d = 50.9f ; 
+			}
+      }	      				     

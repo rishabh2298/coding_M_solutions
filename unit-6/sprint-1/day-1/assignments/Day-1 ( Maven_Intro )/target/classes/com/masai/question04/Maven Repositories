@@ -1,0 +1,19 @@
+
+	Types of Maven Repositories :
+	=============================
+	
+ 1.	Local Repository : # It is created in our local system when we run any maven command.
+ 					   
+ 					   # By default it use .m2 directory as local repository.
+ 					   
+ 					   
+ 2. Central Repository : # It is created on web by apache maven organization.
+ 
+ 						 # If files are not in local repository then it must be in central repository.
+ 						 
+ 						 # This repository contains most of the usually used jar files.
+ 						 
+ 						 
+ 3. Server Repository : # This repository is located on web.
+ 
+ 						# It contains all the libraries that are present in central or not present in central repository. 

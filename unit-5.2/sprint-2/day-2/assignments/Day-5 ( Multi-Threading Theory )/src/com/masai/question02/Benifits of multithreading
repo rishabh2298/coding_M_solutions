@@ -1,0 +1,13 @@
+
+Benifits Multithreading:
+
+# It doesn't block the user because threads are independent and you can perform multiple operations at the
+  same time.
+
+# Threads are independent, so it doesn't affect other threads if an exception occurs in a single thread.
+
+# It keeps our programme run fast and reduce idle time of CPU.
+
+# With multithreading we can decrease our processing time.
+
+# You can perform many operations together, so it saves time.

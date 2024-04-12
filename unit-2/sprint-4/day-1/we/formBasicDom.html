@@ -1,0 +1,69 @@
+<!-- FORM SUBMIT BASIC DOM -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basic form DOM</title>
+  </head>
+  <style>
+    form {
+      height: 330px;
+      width: 200px;
+      background-color: pink;
+      padding: 10px;
+      margin: auto;
+      margin-top: 50px;
+    }
+    form > label,
+    input,
+    select {
+      margin-bottom: 20px;
+      width: 90%;
+      overflow: hidden;
+    }
+  </style>
+  <body>
+    <form>
+      <label>Name</label><br />
+      <input id="name" type="text" /><br />
+      <label>Age</label><br />
+      <input id="age" type="number" /><br />
+      <label>Gender</label><br />
+      <select id="gender">
+        <option value="">Select</option>
+        <option value="MALE">Male</option>
+        <option value="FEMALE">Female</option>
+        <option value="TRANSE">Transe</option></select
+      ><br />
+      <label id="mail">Email</label><br />
+      <input type="email" /><br />
+      <label>Mobile Number</label><br />
+      <input id="mob" type="number" /><br />
+      <input type="submit" />
+    </form>
+  </body>
+</html>
+
+<script>
+  document.querySelector("form").addEventListener("submit", save_to_console);
+  let arr = [];
+
+  function save_to_console(event) {
+    event.preventDefault();
+
+    let obj = {
+      name: document.querySelector("#name").value,
+      age: document.querySelector("#age").value,
+      gender: document.querySelector("#gender").value,
+      email: document.querySelector("#mail").value,
+      mobile: document.querySelector("#mob").value,
+    };
+    
+    arr.push(obj);
+    console.log((arr))
+
+    localStorage.setItem("DATA",JSON.stringify(arr))
+  }
+</script>

@@ -1,0 +1,18 @@
+
+UpperBound => # It is applied as <? extends T>.
+			  # Here all the classes super of T is restricted that's why it is known as upper bound
+			  # In this T is type of Object and here, all the objects of class T and its child class
+			    objects are allow.
+			  #	It is good to use so that we are able to get valid objects in particular methods
+			  # It is applicable only in methods of class and not in class specifically.
+			  
+			  
+LowerBound => # It is applied as <? super T>. 
+			  # Here all the child class objects of T is restricted that's why it is known as lower
+			    bound.
+			  # In this T is type of Object and here, all the objects of class T and its super/parent
+			    class objects are allow.
+			    
+			    
+			  
+Ex => 

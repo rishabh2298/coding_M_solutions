@@ -1,0 +1,39 @@
+
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+#order{
+    margin-left: 20px;
+    font-size: 18px;
+    padding:2px 15px;
+}
+#order:hover{
+    color:white;
+    background-color: blue;
+}
+body{
+    width:600px;
+    border:2px solid black;
+    margin:auto;
+}
+body>h3{
+    margin: 20px 0px 20px 75%;
+}
+img{
+    display: block;
+    height:120px;
+    width:200px;
+}
+.box,.box2{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+.box>h4,.box2>h4{
+    width:50px;
+    display: flex;
+    align-items: center;
+}

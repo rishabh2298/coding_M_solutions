@@ -1,0 +1,99 @@
+
+Overloading: # 	When in the same class more than one method is made with the same method signature but different parameters
+				then that is called Overloading/static polymorphism/early binding.
+			 
+			 #	It will choose which method need to work at compile time that's why it is called overloading polymorphism.
+			 
+			 #	Method will be selected based on input provided at method call time.	 
+			 
+
+Ex :-
+
+class Main{
+	
+	void run(){
+		System.out.println("method run with 0 args");
+	}
+	
+	void run(int i){
+		System.out.println("method run with integer type args");
+	}
+	
+	public static void main(String[] args){
+		
+		Main m = new Main();
+		
+		m.run();
+		m.run(10);
+	}
+	
+}
+
+
+
+
+Overriding: # When same method signature with same parameter is assign but in different class then it is called overriding
+			  /dynamic polymorphism/ late binding;
+			
+			# This is done only through inheritance or by interface.
+			
+			# Method will be selected based on the object class created and type of reference variable using.
+			
+ex:
+
+class Demo{
+
+	public void run(){
+		System.out.println("run method of demo class");
+	}
+
+}
+
+class Main extends Demo{
+
+	@Override
+	public void run(){
+		System.out.println("run method of Main class");
+	}
+	
+	
+	public static void main(String[] args){
+		
+		Demo d1 = new Main();
+		
+		d1.run() // here overridden method will be called; 
+		
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			
+			
+			
+			
+			

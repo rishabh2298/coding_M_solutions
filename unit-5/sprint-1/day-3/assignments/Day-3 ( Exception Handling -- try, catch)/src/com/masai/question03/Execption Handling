@@ -1,0 +1,41 @@
+
+Exception Handling =>	# It is use for graceful and normal termination of application.
+						# These are objects of some predefined classes in java, and it is created by
+						  JVM in case of logical or syntactical errors created during compile time.
+						
+						
+Hierarchy => 								Object
+			    							  |
+		               					  Throwable
+                                              |
+           			---------------------------------------------------
+           			|					            				  |
+     			Exception ( type checked)				       		Error
+           			|
+     		RuntimeException (type unchecked)
+     		
+     		
+ Examples =>
+ 
+ 1. Arithmetic Exception = Thrown when arithmetic exception has occur. for example if a number
+ 						   is dividing by zero.
+ 						   
+ 				
+ 2. NullPoniterException = This occurs when a null value is thrown or attempt to access null position
+ 						   or value.
+ 						   
+ 						 
+ 3. IOExeptoin => This exception occurs when there is some fault in input/output operations.
+ 
+ 4. FileNotFoundException => This exception is thrown when try to open file which is not exist or try to
+ 							 open file which is unable to open. for ex = if try to open a read-only file.
+ 							 
+ 5. ClassNotFoundExeption => This occurs when someone try's to get a class by its string name which is 
+ 							 not exist or try to access different class with different string name.
+ 		
+ 		
+ 		
+ 		
+ 		
+ 		
+ 		

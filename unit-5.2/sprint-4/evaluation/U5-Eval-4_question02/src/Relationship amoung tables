@@ -1,0 +1,52 @@
+
+There are 4 joins available amoung tables in database by which relationship is establish between them;
+
+1. inner join :-
+================
+
+This is establishing relationship in tables when data of one column of each table has common value
+like( having same id, or same department ).
+
+This relation is done only when both table have same cell value (particuat cell in one row);
+
+ex: select * from student s inner join department d ON s.id=d.id;
+
+
+2. self join :-
+===============
+
+This will form relationship in same table with different columns having same datatype;
+
+it is use to check values of data among differnt job role
+
+ex: checking for employee who is working with same manager who is also an employee
+
+select * from emp self join mgr ON self.id=mgr.id;
+
+
+
+3. outer join :-
+================
+
+This is join oppsite to inner join. This join is use to get relation for other than common data available.
+
+a. left outer join :-
+======================
+
+This will give data of left table and common data of left and right table i.e., complete data of left
+table.
+
+ex: select * from emp LEFT OUTER JOIN dept ON emp.deptId=did;	
+
+   (This will give complete data of emp table which satisfy this query)
+
+
+b. right outer join :-
+======================
+
+
+c. full outer join :-
+
+4. check :- this is not supppor by mysql. In this we can get result in the form of check
+			statement that weather our query is correct or not.
+			It is use for checking purpose.

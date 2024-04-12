@@ -1,0 +1,39 @@
+form{
+    height:450px;
+    width:300px;
+    background-color: rgba(41, 186, 72, 0.293);
+    display: grid;
+    padding:40px;
+    margin:50px auto;
+}
+label{
+    font-size: 18px;
+    font-weight: 500;
+}
+input{
+    font-size: 14px;
+    margin-top: -15px;
+    border-radius: 5px;
+    background-color: rgba(36, 76, 76, 0.295);
+    border: transparent;
+    padding:10px;
+}
+select{
+    font-size: 14px;
+    width:30%;
+    padding:10px;
+    background-color: rgba(36, 76, 76, 0.295);
+    border:transparent;
+    border-radius: 5px;
+}
+#submit{
+    color: black;
+    background-color: rgb(251, 213, 213);
+    width:50%;
+    border: 3px solid black;
+    margin: 30px auto;
+}
+#submit:hover{
+    color:white;
+    background-color: blue;
+}

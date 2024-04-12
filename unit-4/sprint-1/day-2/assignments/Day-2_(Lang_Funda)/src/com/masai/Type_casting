@@ -1,0 +1,26 @@
+Type casting :- It is a method to convert one datatype to it's another equivalent datatype.
+
+They are of 2 types:-
+
+1.Implicit type-casting :- when we want to convert lower datatype to higher datatype then 
+ 	the process is called implicit type-casting (aslo upcasting / widening).
+ 
+ eg: int a = 140;
+ 	 long b = a;
+ 	 System.out.println(b) ------> 140 ( successful )
+ 	 
+ 	 here datatype long(16-byte) has greater memory management system than int (8-byte), so
+ 	 it is upcasting.
+ 
+ 2. Explicit type-casting :- when we want to convert higher datatype to lower datatype then 
+ 	 the process is called explicit type-casting (also downcasting / narrowing).
+ 
+ eg : int a = 50;
+ 	  byte b = (byte)a;
+ 	  System.out.println(b) -------> a (successful )
+ 	  
+ 	  here datatype int(8-byte) has greater memory management than byte(1-byte), So to convert 
+ 	  into smaller datatype we have to do explicit casting and for that we have to convert int 
+ 	  to byte and to do that we have to put data-type infront of larger datatype while assigning
+ 	  to smaller datatype.
+ 	

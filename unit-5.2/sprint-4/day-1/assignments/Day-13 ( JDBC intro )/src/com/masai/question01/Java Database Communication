@@ -1,0 +1,9 @@
+
+Java database communication is required for making connection between java application and database
+.So that data can be manipulated or updated from application which will increase.
+
+for making communication we need to use jdbc (java database connection) driver which will come in
+in the form of (.jar) file which is a zip file which contain all the jdbc api's that has classes
+and interface by using which we can make changes in database.
+
+for that we need to save path of jdbc driver of that particular database in our application.

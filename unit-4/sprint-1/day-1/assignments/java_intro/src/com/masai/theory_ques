@@ -1,0 +1,70 @@
+Q1. Write the difference between JRE, JDK and JVM?
+ --> JDK
+  a. It is a java development kit, with the help of
+  	which any developer can make java application which
+  	will work on any platform as it follows WORA concept.
+  b. This kit is only need if someone wants to create a
+  	programme, it contains Developer Tool (compiler,debugger,etc)
+  	and JRE(java runtime environment) 
+  	
+  --> JRE
+  a. It stands for Java Runtime Environment. It's used for running
+  	java applications that has been created by java developers.
+  b. when compiler create byte code from source code then to run that file
+  	this environment is needed.
+  c. As java works on WORA concept so in whichever device we want to run that
+  	code we only need to install JRE software and it will run accordingly.
+  	
+  --> JVM
+  a. JVM stands for Java Virtual Machine. It is a software component of JRE
+  	and works according to the main method of paticular class of java file.
+  b. To call JVM command java is required before that class name without extention,
+  	So this will read only that method which has main method.
+  c. It convert Byte-code (class file) to OS-understandable language for different OS
+  	into which  this JRE is installed(windows-OS,Mac-OS,Linux, etc,).
+  	
+  	
+Q2.Write the difference between JSE, JEE and JME?
+--> JSE
+a.JSE stands for java standard Edition, it is core java upon which other two i.e.
+	JEE and JME also work.
+b. It is a specification (Documentation) of sun-microsystems which contains many
+	libraries which is vrey much helped in making applications.
+c. It is robust and that's why it is use extensively in the organizations.
+
+--> JEE
+a. It stands for java enterprise edition and works on J2SE.
+b. It is used for making big java applications with secure networks.
+c. It provides API's and runtime environments for developing large-scale,
+	multi-tiered applications.
+	
+ --> JME
+ a. It stands for Java Micro Edition.
+ b. It is subset of J2SE and it is used for designing micro-divices like
+ 	set-top boxes, sensors , mobile phones etc.
+ 	
+
+Q3. How does java achieve platform independency?
+--> When we write java source code using note-pad or any IDE's and when compiler
+	check the source code and compile it, it get convert to .class file in form of 
+	Byte-code by Compiler of Development Tool.
+		This Byte-code is actually plateform independent, so in whatever device we want
+	to run our code we just need to install JRE software in it and this JRE contain JVM 
+	component software which take byte-code and give to that particular OS in which it is 
+	installed and it will underlying in the process and give deried result according to 
+	JAVA-code.
+	So by Byte-code java achieve plateform independency.
+	
+Q4.What are features of Java and explain them?
+a. Simple - it is simple to learn and its syntax is clean and easy.
+b. Object oriented - It supports OOP's concepts by which we can make our code more secure
+			secure and easy to maintain as compare to structured programming .
+c. Platform Independent - It works on WORA concept that's why it is plateform independent.
+			It uses JRE for running code of different plateforms .
+d. Secure - It uses OOP's and has predefined well known network security implemented
+		which make java more secure than other languages.
+e. Robust - It is good in memory management and has many classes which help java in exceptional
+		handling and has predefined libraries, which makes it very robust as compare to others.
+f. Multithreaded - It supports multi-threading by which it is able to perform multiple funcitons 
+		simultaneously.
+ 

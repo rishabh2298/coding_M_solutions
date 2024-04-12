@@ -1,0 +1,31 @@
+public class Main{
+	
+	public static void main(String[] args){
+		
+		float f=3.3;
+		
+		System.out.println(f);
+		
+	}
+}
+
+Explanation :- This code will give compile time error because of ( line-5 ).
+			   Always when we initialize any decimal value than it is a double data-type value
+			   by default and double is bigger than float so we have to do explicit type-casting.
+			   We have to convert double to float than it will give correct output.
+			   
+			   
+Correct  Code 
+---------------
+
+public class Main{
+
+	public static void main(String[] args){
+		
+		float f = 3.3f;      -----> conversion from double to float by writing (f) just after value
+		
+		System.out.println(f);
+		
+	}
+}			   
+

@@ -1,0 +1,26 @@
+
+It has 3 life cycle stages :-
+
+1. Transient stage :- If we create a object of entity class and this class is not attached
+					  to any entity manager object then that state is known as transient stage.
+					  
+					  ex - Product product = new Product(10,"shirt",999);
+					  
+2. Persistence stage :- If a persistence class object is associated with entity manager object
+						then this object is in persistence stage.
+						
+						Ex : if we use persist(-) method or merge(-) method then it is in persistence
+						stage.
+						
+						when an entity class object is in persistence stage it is in-sync with 
+						database and whatever changes made inside the transaction stage into entity
+						object it will auto updated the changes in the databases.
+						
+						
+3. Detached Stage :- In this stage the entity class object is detached from database by detaching the
+					 entity manager.
+					 
+					 It is done by using method .close() or .save().
+					 
+					 If we use .merger() method to that detached object of entity manager then it
+					 again came back to persistence stage.

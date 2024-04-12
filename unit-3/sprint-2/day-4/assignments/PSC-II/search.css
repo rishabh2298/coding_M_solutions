@@ -1,0 +1,30 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+#body1{
+    height:800px;
+    background-image: url("https://j.gifs.com/y0YeWG.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top:150px;
+}
+#search{
+    font-size: 20px;
+    display: block;
+    border-radius: 10px;
+    margin: auto;
+    padding:10px 50px;
+}
+#container{
+    width:340px;
+    margin:auto;
+}
+#container>p{
+    color:white;
+    font-size: 18px;
+    font-weight: 700;
+    margin-left: 20px;
+    line-height: 30px;
+}

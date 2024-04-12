@@ -1,0 +1,111 @@
+<!-- Masai Navbar -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+</head>
+<style>
+    *{
+        margin:0;
+        padding:0;
+    }
+    body{
+        display:flex;
+        justify-content: center;
+    }
+    #main{
+        width: 1300px;
+        margin:auto;
+        display:flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 20px;
+    }
+    select{
+        font-weight: 700;
+        border:transparent;
+    }
+    #main>div:nth-child(2){
+        width:65%;
+        font-size: 12px;
+        font-weight: 700;
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:space-between;
+        align-content: space-around;
+    }
+    #main>div:nth-child(2)>div{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #main>div:nth-child(2)>div:nth-child(7){
+        margin:3px 0;
+        width:200px;
+        display:flex;
+        justify-content: space-evenly;
+        border-radius: 5px;
+        background-color: #f2fdff;
+    }
+    a{
+        font-size: 16px;
+    }
+    #main>div:nth-child(2)>div:nth-child(7)>img{
+        height:20px;
+        width: 20px;
+    }
+    button{
+        padding:15px;
+        margin-left: 20px;
+        border:1px solid red;
+        color:red;
+        border-radius:5px;
+    }
+    button:hover{
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(13, 78, 229, 0.907) 0px -3px 5px;
+    }
+</style>
+<body>
+    <div id="main">
+        <div>
+            <img src="https://masaischool.com/img/navbar/logo.svg" alt="img error" />
+        </div>
+        <div>
+            <div>
+                <select>
+                    <option>COURSES</option>
+                    <option>Part time</option>
+                    <option>Full time</option>
+                    <option>Online</option>
+                    <option>Offline</option>
+                </select>
+            </div>
+            <div>
+                <p>FEES & ISA</p>
+            </div>
+            <div>
+                <p>ABOUT US</p>
+            </div>
+            <div>
+                <p>HIRE FROM US</p>
+            </div>
+            <div>
+                <p>FAQ</p>
+            </div>
+            <div>
+                <p>EVENTS</p>
+            </div>
+            <div>
+                <a href="https://masaischool.com/referral" target="_blank"><p>REFER & EARN</p></a>
+                <img src="https://masaischool.com/img/referral/hand.png" alt="img error" />
+            </div>
+            <div>
+                <button>LOGIN</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

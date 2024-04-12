@@ -1,0 +1,80 @@
+body{
+    width:1300px;
+    margin:20px auto;
+}
+#navbar{
+    border:1px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+    background-color: rgba(249, 158, 190, 0.661);
+}
+#home:hover{
+    color:blue;
+    cursor: pointer;
+}
+#navbar>div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#fbbed4;
+}
+#one{
+    width:270px;
+}
+#two{
+    width:450px;
+}
+h3{
+    color:black;
+}
+a{
+    text-decoration: none;
+}
+#two h3:hover{
+    color:blue;
+}
+#query{
+    padding:4px 15px;
+}
+button{
+    height:25px;
+}
+button:hover{
+    color:white;
+    background-color: darkslategrey;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+
+ /* content of the Page  */
+
+ #container{
+     border:1px solid black;
+     display: grid;
+     grid-template-columns: repeat(4,1fr);
+     gap:30px;
+     background-color: rgb(234, 204, 166);
+     padding:10px;
+     margin-top: 20px;
+ }
+ .cards{
+     /* height:250px; */
+     border:1px solid black;
+ }
+ .cards:hover{
+     cursor: pointer;
+     margin:10px;
+     background-color: #fbbed4;
+     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+ }
+ .cards>img{
+     height:70%;
+     width:100%;
+ }
+ .cards>h4{
+     padding: 0px 10px;
+     margin-bottom: -85px;
+ }
+ 

@@ -1,0 +1,24 @@
+
+try
+{
+System.out.print("A");
+int num = 99/0;
+System.out.print("B");
+}
+catch(ArithmeticException ex)
+{
+System.out.print("C");
+}
+catch(Exception ex)
+{
+System.out.print("D");
+}
+System.out.print("E");
+}
+
+
+result = It will give (A,C,E) because
+		A -> As compiler will enter to try for checking the equation so ( 1st A will print );
+		C -> After Calculating num it will check for exception wheather any match it or not. So here it matches
+			 with ArithemeticException as it is wrong. ( 2nd C will print );
+	 	E -> As after exeption handling this will print compulsory because it is out of (try-catch)

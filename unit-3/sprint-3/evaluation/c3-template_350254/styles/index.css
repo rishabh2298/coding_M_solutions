@@ -1,0 +1,26 @@
+body{
+    /* width:1550px; */
+    margin:auto;
+}
+#hotels_list{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap:20px;
+}
+#hotels_list>div{
+    height:550px;
+    border:1px solid black;
+}
+#hotel>img{
+    height: 60%;
+    width:100%;
+}
+#hotel>button,#hotel>h4,#hotel>p{
+    margin-left: 10px;
+}
+#sorting{
+    margin: 20px 0
+}
+#sorting>button{
+    margin-left: 20px;
+}

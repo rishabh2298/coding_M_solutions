@@ -1,0 +1,11 @@
+
+1. 	POJO stands for Plane Old Java Object and Java Bean class is also a POJO class but with some
+	advancement added in it to access object's.
+	
+2.	POJO is simple java class which can be accessed by anyone and it doesn't implements or extends
+	any other class or interface. But in bean class to get or set values to the variables we have
+	to go throw certain getter and setter methods.
+	
+3.	POJO class can be any class which has zero argument constructor and not implementing or extending
+	other classes or interface but bean class is a encapsulated class whose variable values can be
+	access only by some getter and setter methods.

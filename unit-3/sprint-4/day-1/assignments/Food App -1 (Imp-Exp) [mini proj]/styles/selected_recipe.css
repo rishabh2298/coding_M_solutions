@@ -1,0 +1,30 @@
+/* Random Recipe  */
+body{
+    width:1300px;
+    margin:auto;
+}
+#container{
+    border:1px solid black;
+    background-color: #bed6d68e;
+    margin-top:20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#container>h1{
+    font-size: 50px;
+    color: rgb(44, 35, 219);
+}
+#container>h2{
+    color:red;
+    margin:80px 100px -20px -650px;
+}
+#container>img{
+    width:450px;
+}
+#container>h4{
+    width:800px;
+    line-height: 30px;
+    margin: 40px 0px;
+}

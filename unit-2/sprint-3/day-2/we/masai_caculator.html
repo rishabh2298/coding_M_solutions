@@ -1,0 +1,112 @@
+<!-- MASAI CALCULATOR RETURNS DOM -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom-Part</title>
+    <style>
+        h1{
+            color:teal;
+            font-size: 25px;
+            text-align:center;
+        }
+        #container{
+            border: 1px solid red;
+            height:350px;
+            width:280px;
+            margin:40px auto;
+            box-shadow: rgba(233, 120, 120, 0.702) 0px 7px 29px 0px;
+        }
+        #container>div:first-child{
+            height: 6%;
+            width: 74%;
+            box-shadow: rgba(37, 37, 118, 0.48) 0px 7px 29px 0px;
+            margin:20px auto;
+            border-radius: 10px;
+            display:flex;
+            justify-content:flex-end;
+            align-items:center;
+            padding: 10px;
+            overflow-y: hidden;
+        }
+        #container>div:last-child{
+            display:grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: repeat(4,1fr);
+            gap: 20px 20px;
+            margin:30px 30px;
+        }
+        #container>div>div{
+            height:45px;
+            width:40px;
+            box-shadow: rgba(74, 25, 25, 0.774) 0px 3px 8px;
+            display:grid;
+            justify-content: center;
+            align-content:center;
+            border-radius: 30% 0;
+        }
+        .blc{
+            background-color: black;
+            color:white;
+        }
+        #rd{
+            color:white;
+            background-color: red;
+        }
+        #child>div:hover{
+            background-color: rgba(209, 76, 76, 0.601);
+        }
+    </style>
+</head>
+<body>
+    <h1>Masai Calculator</h1>
+    <div id="container">
+        <div></div>
+        <div id="child">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div class="blc">+</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div class="blc">-</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+            <div class="blc">*</div>
+            <div id="rd">C</div>
+            <div>0</div>
+            <div class="blc">=</div>
+            <div class="blc">/</div>
+        </div>
+    </div>
+</body>
+</html>
+
+<script>
+    let disp = document.querySelector("#container>div");
+    let feed = document.querySelectorAll("#child>div"); 
+    let bag="";
+    for(let i=0; i<feed.length; i++){
+        feed[i].addEventListener("click", displaynum)
+    }
+    function displaynum(event){
+        let elem = event.target.innerText
+        if(elem=="="){
+            bag=eval(disp.innerText)
+            if(disp.innerText==""){
+                bag="";
+            }
+        }
+        else if(elem=="C"){
+            bag="";
+        }
+        else{
+            bag += elem;
+        }
+        disp.innerText = bag;
+    }
+</script>

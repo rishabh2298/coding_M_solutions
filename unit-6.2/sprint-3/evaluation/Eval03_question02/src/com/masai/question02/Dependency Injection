@@ -1,0 +1,67 @@
+
+ # DI is stands for Dependency Injection
+ 
+ # When any class is dependent on other dependency class for it's object to get process further then
+   providing object of dependency class to dependent class is called Dependency Injection.
+   
+ # It can be done by developer explicitly or by Spring container Implicitly.
+ 
+ 
+ 
+ Ex.		Student.java
+ 			=============
+ 			
+ 			package com.masai
+ 			
+ 			public class Student{			// Dependency class
+ 				
+ 				public Student(){
+ 				}
+ 				
+ 				public void fun1(){
+ 					System.out.println("Hello This is Student(fun1)");
+ 				}
+ 				
+ 			}
+ 			
+ 			
+ 			
+ 			
+ 			
+ 			Collage.java
+ 			============
+ 			
+ 			package com.masai
+ 			
+ 			public class Collage{ 			// Dependent class
+ 				
+ 				public Student student;		
+ 			
+ 				public Collage(){
+ 				}
+ 				
+ 				
+ 				public void setStudent(Student student){		dependency injection (DI)
+ 						this.student = student
+ 				}
+ 				
+ 			}
+ 			
+ 			
+ 			
+ 			
+ 			
+ 			
+ 			
+ 			
+ 			
+ 			
+ 			
+ 			
+ 			
+ 			
+ 			
+ 			
+ 			
+ 			
+ 			

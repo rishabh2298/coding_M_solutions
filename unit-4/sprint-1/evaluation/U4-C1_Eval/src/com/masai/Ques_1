@@ -1,0 +1,13 @@
+When we write java source code it get complied by compiler of Developer tool which 
+is inside JDK into byte-code. There is software component JVM(Java Virtual Machine) 
+inside JRE (Java Runtime Environment) which read this byte-code and run the main
+method of that java .class files.
+		As this JRE can be installed on different OS and it require only byte-code 
+to run applications. So because of this byte-code which is a .class file our java 
+code is able to run on different plateforms (OS) like Windows,Mac,Linux etc. and this
+byte-code make WORA (Write Once Run Anywhere) concept which make our code plateform 
+independent in the form of byte-code.
+
+Java source code ----> compiler --------->  Byte-code -------> PLATEFORM ------> JVM ----------> OS execute application
+  (.java)              (JRE Development    (.class files)      INDEPENDENT      (JRE component
+  						 tool)                                                       software)      

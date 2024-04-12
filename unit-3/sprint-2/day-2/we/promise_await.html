@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Async-Await</title>
+  </head>
+  <body>
+    <img
+      id="buffer"
+      src="https://c.tenor.com/K2UGDd4acJUAAAAM/load-loading.gif"
+    />
+  </body>
+</html>
+
+<script>
+  function bank_server() {
+    return tru;
+  }
+
+  let payment = new Promise(function (res, rej) {
+    check = bank_server();
+
+    setTimeout(function () {
+      if (check) {
+        res("Payment is done Successfully");
+      } else {
+        rej("Something went wrong !");
+      }
+    }, 2500);
+  });
+
+  //   To handdle Promise
+  let image = document.querySelector("#buffer");
+
+  content();
+  async function content() {
+    try {
+      res = await payment;
+      image.src = "https://c.tenor.com/xVfFIHxAzW4AAAAC/success.gif";
+    } catch (err) {
+      image.src = "https://c.tenor.com/flmQIupAKBkAAAAC/steven-he-failure.gif";
+    }
+  }
+</script>

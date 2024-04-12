@@ -1,0 +1,12 @@
+
+ # IOC is stands for Inversion Of Control.
+ 
+ # Usually when a class is dependent for object of dependency class then developer will create object
+   of dependency class and provide it to dependent class to access data/functions of dependency class.
+   
+ # But if this process of creating a object and providing to dependent class is done by some external 
+   entity class which in case of Spring is Spring container then this providing control to other is 
+   called inversion of control.
+   
+ # So this IOC is responsible for creating bean class and provide this Dependency to dependent class
+   by automating the process along with some other properties.

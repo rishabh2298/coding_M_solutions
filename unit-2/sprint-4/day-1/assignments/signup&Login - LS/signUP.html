@@ -1,0 +1,106 @@
+<!-- Masai SignUP page -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-UP Page</title>
+    <style>
+        *{
+            margin: 0px;
+            padding:0px;
+        }
+        img{
+            display: block;
+            margin: 25px auto;
+        }
+        #container{
+            width:450px;
+            background-color: rgba(80, 219, 80, 0.297);
+            padding:20px;
+            border-radius: 10px;
+            margin:auto;
+            margin-bottom: 80px;
+        }
+        #container>h1{
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        h4,p{
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        input{
+            width:90%;
+            padding:10px;
+            border-radius: 5px;
+            border:1px solid gray;
+        }
+        p,form>h4:last-child{
+            color:gray;
+            text-align: center;
+            width:400px;
+            margin:40px auto;
+        }
+        span{
+            color:blue;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <img src="https://sso.masaischool.com/brand_dark.svg" />
+    <form id="container">
+        <h1>Sign Up</h1>
+        <h4>Full Name</h4>
+        <input id="name" type="text" placeholder="Enter your full name" required="required" />
+        <h4>Email</h4>
+        <input id="email" type="email" placeholder="Enter your Email" required="required" />
+        <h4>Password</h4>
+        <input id="password" type="password" placeholder="Enter password" required="required" />
+        <p>By signing up,Iaccept the Masai School <span>Terms of Service</span> and
+            acknowledge the <span>Privacy Policy</span>.</p>
+        <input type="submit" />
+        <h4>Already have an account?<span>Sign In</span></h4>    
+    </form>
+</body>
+</html>
+
+<script>
+    let form=document.querySelector("form")
+    form.addEventListener("submit",my_function)
+
+    let userData=JSON.parse(localStorage.getItem("DATA")) || [];
+
+    function my_function(event){
+        event.preventDefault();
+        let obj={
+            userName:document.querySelector("#name").value,
+            userEmail:document.querySelector("#email").value,
+            userPass:document.querySelector("#password").value
+        }
+        
+        if(check_duplicate(userData,obj)){
+            userData.push(obj)
+            localStorage.setItem("DATA",JSON.stringify(userData))
+            alert("Sign_Up Done Successfully")
+            window.location.href="sign_IN.html";
+        }
+        else{
+            alert("SORRY!!!     Email-Id is already Exist")
+        }
+    }
+
+    function check_duplicate(data,id){
+        let arr=data.filter(function(elem){
+            return (elem.userEmail==id.userEmail)
+        })
+        if(arr.length>0){
+            return false;
+        }
+        else{
+            return true;
+        }
+    }
+</script>

@@ -1,0 +1,14 @@
+
+	#	Multiple Inheritance is a concept where a single class can inherit properties of more than one different 
+		classes simultaneously. 
+		But it is not possible in java classes it can be done only by interface where more than one interface can 
+		extends in other interface and that extended interface can be implemented in child class.
+		
+		Suppose there are three classes A,B,C where A and B has same method with same parameters and both classes
+		will be extended in C which will be child for both A and B,
+					Now if we make a object of class C and call that method then complier will got confused and
+		unable to decide that with which parent class method it should go and give an ambiguity error.
+		
+		There for  for these interface is introduced if there will be same method in different interfaces let's say 
+		method of A and B are same and when we implement's it inside of class C then obviously it will be an abstract
+		method so we have to implement it just once and it won't get any compile error.  

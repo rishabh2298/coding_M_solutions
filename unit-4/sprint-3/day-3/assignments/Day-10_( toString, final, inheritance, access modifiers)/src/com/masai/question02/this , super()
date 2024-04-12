@@ -1,0 +1,111 @@
+
+
+
+"this" keyword :- # It is a type of keyword which is use to indicate current object variable.
+					
+				  # It is mainly use while creating constructor explicitly to indicate various instance variables to assign
+				    different values to it according to current object.
+				    
+				  # "this" keyword can't be used inside static methods be it's work is to point to object variables.
+				  
+				  # "this" keyword can be in any statement line, it doesn't need to be first statement.
+				  
+				  # for linking different constructors inside a same class "this" keyword will be used and at that time
+				    it should be first statement inside the constructor.
+				    
+Ex 1. =
+
+class Main{
+
+	int roll;
+	String name;
+	
+	Main(int roll, String name){
+		this(10);
+		this.roll = roll;									// afer executing (int) type this will execute;
+		this.name = name;
+		System.out.println("This is 0 args");				
+	}
+	
+	Main(int num){
+		System.out.println("This is integer type args");    // this will execute first;
+	}
+}
+
+
+
+"super" keyword :- # This keyword is use to indicate immediate parent class.
+
+				   # it's use is to create immediate parent class constructor first then child class constructor will be
+				     created.
+				   
+				   # With the help of this we can call methods and variables of immediate parent class also.
+				   
+				   # it can't be called inside static method because if super call non static method then it will show
+				     runtime error.
+				     
+				   # in 0 argument constructor it is by default called (public static constructorName), but if we 
+				     define a parameterized constructor then we have to call parent class object explicitly through
+				     constructor of child class by passing appropriate values.   
+				     
+				     
+Ex :=
+
+class Demo{
+
+	int num = 23;
+	Strign name;
+	
+	Demo(String name){
+		this.name = name;
+	}
+	
+	static void run(){
+		System.out.println("run of demo class");
+	}
+
+}
+
+class Main{
+
+	Main(){
+		super("Raju");
+	}
+	
+	public static void main(String[] args){
+		
+		super.void();
+		
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

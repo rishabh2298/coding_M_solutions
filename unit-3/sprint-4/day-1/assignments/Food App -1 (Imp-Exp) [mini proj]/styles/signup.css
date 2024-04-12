@@ -1,0 +1,29 @@
+form{
+    border:1px solid black;
+    background-color: rgb(102, 246, 126);
+    height:300px;
+    width:200px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    padding:50px;
+    margin:80px auto;
+}
+label{
+    font-size: 20px;
+    font-weight: 400;
+}
+input{
+    margin-top: -10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    padding:4px 10px;
+}
+#submit{
+    width:100px;
+    margin:auto;
+}
+#submit:hover{
+    color:white;
+    background-color: blue;
+}

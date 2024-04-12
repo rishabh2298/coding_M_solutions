@@ -1,0 +1,52 @@
+/* Fill CSS here */
+h1{
+    text-align: center;
+    color:#0368ab;
+    text-decoration: underline #0368ab;
+}
+div{
+    width: 1400px;
+    display:flex;
+    justify-content: space-evenly;
+    margin:60px;
+}
+form{
+    height:370px;
+    width:300px;
+    padding:10px 0px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+form>label,input,select{
+    margin:15px 15px;
+}
+form>input,select{
+    width:82%;
+    margin-top: -8px;
+    border: 1px solid rgba(109, 106, 106, 0.171);
+    background-color: #7293a82a;
+    box-shadow: rgba(153, 195, 237, 0.408) 0px 8px 24px;
+    padding: 2.5px;
+}
+form>input:last-child{
+    display: block;
+    margin:auto auto auto 15px;
+    padding:5px 82px;
+    border-radius: 10px;
+    color:white;
+    background-color: #0368ab;
+}
+table{
+    border:1px solid white;
+}
+thead>tr{
+    background-color: #0368ab;
+    color: white;
+}
+#clear{
+    color:red;
+}
+#clear:hover{
+    color:white;
+    background-color: red;
+    cursor:pointer;
+}

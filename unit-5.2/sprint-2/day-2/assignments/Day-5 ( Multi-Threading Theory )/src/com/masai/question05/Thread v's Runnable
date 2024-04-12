@@ -1,0 +1,24 @@
+
+Thread Class => # This class belongs to java.lang package. And it contains several methods which are
+				  operated by thread object.
+				  
+				# This class implements runnable methods and override's run method with empty body.
+				  
+				# This class has a non-static method start() which is responsible for calling run() 
+				  method internally.
+				  
+				# It take class that implements runnable interface through it's constructor to create
+				  thread for that class object.
+				  
+				  
+Runnable Interface => # This belongs to java.lang package. And it contains only one abstract class
+						public void run().
+						
+					  # It is a functional interface so it support's functional programming.
+					  
+					  # It's method will run by thread class start() method to run a thread simultaneously
+					    with main thread. If we call direct run method then it will perform as a normal
+					    non-static method.
+					    
+					  # To run a seperate thread it's method is very important and without run() method 
+					    it's impossible to create and run seprate thread along with main thread.

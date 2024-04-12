@@ -1,0 +1,16 @@
+
+1. 	JDBC don't allow java object directly into table because it doesn't take java object as it's 
+	parameter.
+	
+2. 	JDBC code is database dependent and we can't use it for other databases as it's query is 
+	database specific.
+	
+3. 	In JDBC we have write same code again and again only difference is the query that we are passing
+	which make it a boiler plate problem. 
+	
+4.	JDBC throw a lot of checked exception but ORM throw only some of Runtime exception (unchecked).
+
+5.	After using select operation we get ResultSet object which is not transferable and we have to
+	take data from it only after knowing about result set operations.
+	
+6.	There is no caching and transaction management support in JDBC.

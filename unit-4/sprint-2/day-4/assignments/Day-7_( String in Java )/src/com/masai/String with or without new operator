@@ -1,0 +1,24 @@
+String Literal :- # This is simple way of creating a string object. In this JVM read whatever written inside double quotes 
+					("").
+				  # It will create a string object inside SCP (String Constant Pool) Area, if there is no object with same
+				  	content available than only. Otherwise it will create a new object inside SCP area.
+				  # If same object is already present then it will share the same object with all reference variable which 
+				  	has same object.
+				
+
+String with "new" :- # In this content will add to SCP area by passing it through constructor. If there was no object with 
+					   same content available. Otherwise share same object in SCP.
+					 # But due to "new" operator a new memory allocate inside heap area and content from SCP area will be
+					   copied here and this heap area object address will be saved inside our reference variable, instead
+					   of object address of SCP area.
+					 
+					 		  
+Example : 	String s1 = "Hello";    // here object will create inside SCP area and that address will save inside s1
+			String s2 = "Hello";	// as this object is already created inside SCP area so it will share same object 
+									   address. So (s1==s2) will be "true".
+									   
+			String s3 = new String("Hello")  // here it will a new object create inside heap area and copy the content from 
+											    SCP area to the object of heap area. And address of that heap area object
+											    will be saved inside s3. 
+											    Therefore object address of (s1==s2) will true but (s1==s3) will be false.
+					     

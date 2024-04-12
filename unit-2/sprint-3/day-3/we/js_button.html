@@ -1,0 +1,104 @@
+<!-- Masai button by JS -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Button by js</title>
+    <style>
+      #container {
+        height:40px;
+        width: 1000px;
+        display: flex;
+        justify-content: space-between;
+        margin:30px;
+      }
+      .same {
+        height: 100%;
+        width:10.5%;
+        color: white;
+        background-color: #027afe;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+        border:transparent;
+      }
+      .same:hover{
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 20px 0px;
+      }
+      #container > button:nth-child(2) {
+        background-color: #6b747c;
+      }
+      #container > button:nth-child(3) {
+        background-color: #27a643;
+      }
+      #container > button:nth-child(4) {
+        background-color: #db3544;
+      }
+      #container > div:nth-child(5) {
+        color: black;
+        background-color: #febf07;
+      }
+      #container > button:nth-child(6) {
+        background-color: #12a1b7;
+      }
+      #container > button:nth-child(7) {
+        color: black;
+        background-color: #f8f9fa;
+      }
+      #container > button:nth-child(8) {
+        background-color: #343a3f;
+      }
+      #container > button:nth-child(9) {
+        color: #0c7dfe;
+        background-color: #fefeff;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <!-- Append button here -->
+    </div>
+  </body>
+</html>
+<script>
+  let b1 = document.createElement("button");
+  b1.innerText = "Primary";
+  b1.setAttribute("class", "same");
+
+  let b2 = document.createElement("button");
+  b2.innerText = "Secondary";
+  b2.setAttribute("class", "same");
+
+  let b3 = document.createElement("button");
+  b3.innerText = "Success";
+  b3.setAttribute("class", "same");
+
+  let b4 = document.createElement("button");
+  b4.innerText = "Danger";
+  b4.setAttribute("class", "same");
+
+  let b5 = document.createElement("button");
+  b5.innerText = "Warning";
+  b5.setAttribute("class", "same");
+
+  let b6 = document.createElement("button");
+  b6.innerText = "Info";
+  b6.setAttribute("class", "same");
+
+  let b7 = document.createElement("button");
+  b7.innerText = "Light";
+  b7.setAttribute("class", "same");
+
+  let b8 = document.createElement("button");
+  b8.innerText = "Dark";
+  b8.setAttribute("class", "same");
+
+  let b9 = document.createElement("button");
+  b9.innerText = "Link";
+  b9.setAttribute("class", "same");
+
+  document.querySelector("#container").append(b1, b2, b3, b4, b5, b6, b7, b8, b9);
+</script>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:context="http://www.springframework.org/schema/context"
+  xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+
+
+	<bean id="person01" class="com.masai.model.Person">
+		<property name="id" value="11" />
+		<property name="name" value="Rohit Sharma" />
+		<property name="age" value="36" />
+		<property name="email" value="rohit@gmail.com" />
+		<property name="mobile" value="98954 45543" />
+	</bean>
+
+	<bean id="person02" class="com.masai.model.Person">
+		<property name="id" value="12" />
+		<property name="name" value="Virat Kohli" />
+		<property name="age" value="32" />
+		<property name="email" value="virat@gmail.com" />
+		<property name="mobile" value="95874 44543" />
+	</bean>
+
+	<bean id="person03" class="com.masai.model.Person">
+		<property name="id" value="13" />
+		<property name="name" value="Ashwin Bumrah" />
+		<property name="age" value="34" />
+		<property name="email" value="bumrah@gmail.com" />
+		<property name="mobile" value="888954 25543" />
+	</bean>
+
+	<bean id="person04" class="com.masai.model.Person">
+		<property name="id" value="14" />
+		<property name="name" value="M.S. Dhoni" />
+		<property name="age" value="42" />
+		<property name="email" value="dhoni@gmail.com" />
+		<property name="mobile" value="75554 34243" />
+	</bean>
+
+	<bean id="person05" class="com.masai.model.Person">
+		<property name="id" value="15" />
+		<property name="name" value="Yuvraj Singh" />
+		<property name="age" value="44" />
+		<property name="email" value="yuvraj@gmail.com" />
+		<property name="mobile" value="88888 45543" />
+	</bean>
+	
+	
+	
+	
+	<bean id="skill01" class="com.masai.model.Skill">
+		<property name="id" value="11" />
+		<property name="name" value="Batting, Keeping" />
+		<property name="yearOfExperience" value="12" />
+	</bean>
+ 	
+	<bean id="skill02" class="com.masai.model.Skill">
+		<property name="id" value="12" />
+		<property name="name" value="All Rounder" />
+		<property name="yearOfExperience" value="10" />
+	</bean>
+ 	
+	<bean id="skill03" class="com.masai.model.Skill">
+		<property name="id" value="13" />
+		<property name="name" value="Baller, Fielder" />
+		<property name="yearOfExperience" value="8" />
+	</bean>
+	
+	
+	
+	
+	
+	<bean id="personService" class="com.masai.service.PersonService">
+		<property name="skillMap">
+			<map>
+				<entry key-ref="person01" value-ref="skill02" />
+				<entry key-ref="person04" value-ref="skill01" />
+				<entry key-ref="person03" value-ref="skill03" />
+			</map>
+		</property>
+		<property name="personList">
+			<list>
+				<ref bean="person01"/>
+				<ref bean="person02"/>
+				<ref bean="person03"/>
+				<ref bean="person04"/>
+				<ref bean="person05"/>
+			</list>
+		</property>
+	</bean>
+	
+</beans>
+
+
+
+
+

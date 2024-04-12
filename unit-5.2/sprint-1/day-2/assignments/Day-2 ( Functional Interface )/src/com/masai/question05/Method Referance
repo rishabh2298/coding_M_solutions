@@ -1,0 +1,58 @@
+
+Method Reference =>	# Instead of creating a Lambda Expression with all the details, with the help of 
+					  Method Reference we can refer an existing method of any class to the 
+					  functional interface variable.
+					  
+					# We can take reference of static method => ClassName :: methodName;
+			
+					# We can take reference of non-static method => ClassObject :: methodName;
+			
+					# We can take reference of constructor => ClassName :: new;
+
+				
+Example
+=======
+
+@Function Interface
+public interface X{
+
+	public abstract void printText();
+
+}
+
+
+
+public class Main{
+
+	public Main(){
+		System.out.println(" example of constructor MR");
+	}
+
+	public static void fun1(){
+		System.out.println(" example of static MR ");
+	}
+	
+	public void fun2(){
+		System.out.println(" example of non-static MR" );
+	}
+	
+	public static void main(String[] args){
+		
+		X x1 = Main :: fun1;  		// static method reference
+		X x2 = new Main() :: fun2	// non-static method reference
+		X x3 = Main :: new			// constructor method reference
+		
+		x1.printText();
+		x2.printText();
+		x3.printText();
+	}
+
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,35 @@
+<!-- COUNTER USING LS -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>counter_using_Local-Storage</title>
+</head>
+<body>
+    <h1></h1>
+    <button>Increase</button>
+    <button>Decrease</button>
+</body>
+</html>
+
+<script>
+    let count=localStorage.getItem("counter") || 0;
+        document.querySelector("h1").innerText=count;
+
+    document.querySelector("h1+button").addEventListener("click",funInc)
+    document.querySelector("button+button").addEventListener("click",funDec)
+
+    function funInc(){
+        count++;
+        document.querySelector("h1").innerText=count;
+        localStorage.setItem("counter",count)
+    }
+    function funDec(){
+        count--;
+        document.querySelector("h1").innerText=count;
+        localStorage.setItem("counter",count)
+    }
+
+</script>

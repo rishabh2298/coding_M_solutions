@@ -1,0 +1,12 @@
+
+1. 	JPA is stands for Java Persistence API's and It is a service API's provided by Oracle corps
+	whereas Hybernate is a ORM (object relational mapping) software made by Hybernate organization.
+	
+2.	JPA is a collection of api's which is inside javax.persistence and all the ORM softwares are
+	implementing this JPA and build their ORM software over it. So we have access on JPA from 
+	all the ORM software.
+	
+3. 	If we write our business logic using JPA then even if we change our database it will be working
+	fine but if we use Hybernate API's to write code then it is domain specific and we can't use
+	other ORM because it will create errors.
+	

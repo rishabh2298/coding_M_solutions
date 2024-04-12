@@ -1,0 +1,18 @@
+
+1.	ORM can take java object and internally it will covert it to sql query and persist it in the 
+	database.
+	
+2.	By using JPA we can make our application ORM independent and database independent so that it will
+	run over any database and any orm software.
+	
+3.	It doesn't have any boiler plate problem link JDBC and has very less and clean coding.
+
+4.	ORM doesn't throw any checked exception and throw some unchecked exception which need not to be
+	handled.
+	
+5.	we can get java object when we make a JPA call to get data which is not possible in case of
+	JDBC.
+	
+6.	There is caching technique which will make local file of our application and instead of interacting
+	with database for every query it will save operation in caching and commit after some time which
+	will save some cost for database interaction chargers.

@@ -1,0 +1,25 @@
+
+ Tight Coupling :-
+ ================
+ 
+ When an dependent class is dependent for object of dependency class and if by making any changes in the
+ dependency class in future will force to do changes in dependent class means it will also affect process
+ of dependent class then it is called tight coupling
+ 
+ i.e. dependent class it tightly coupled with dependency class and if we do any changes in dependent class
+     (like changing class name or method name or variable name then it need to do changes in dependent
+     class also.
+     
+     
+     
+  Loose Coupling :-
+  ================
+  
+  To resolve this tight coupling loose coupling was introduced
+  
+  According to this concept if we do any changes in our dependency class then it won't affect anything
+  in our dependent class. Means there is no need to do any changes in dependent class and we can add
+  more dependency dynamically.
+  
+  For this we use interface and implement that to all our dependency class and write logic in it's method
+  which will be called form our dependent class.

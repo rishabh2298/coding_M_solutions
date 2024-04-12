@@ -1,0 +1,82 @@
+String is immutable in java because it create it's own object in SCP area (String Constant Pool)
+and if we create another string object than it compare with other string objects if it got match 
+than both the reference variable share same object otherwise it will create a new one.
+
+String : # It is class of java.lang package and it will create a object in SCP (String Constant Pool)
+		   area of its content (written under "" ).
+		 # It is immutable data-type, and if we want to update the content than it will make a
+		   new object in SCP area.
+		   
+String Builder: # If we want to make update on the previous created String object then this
+ 				  String Builder comes in role.
+ 				# It make possible for use to make update on the same object of String.
+ 				# It is faster in creating String object.
+ 				# But it is neither sync nor threat protected.
+ 				
+ 
+ Ex :- 
+
+1. .toString() : it will convert the content into string .
+
+ eg:    int x = 100;
+ 		
+ 		String str = new String();
+ 		String one = str.toString(x); 
+ 		
+2. .toChar() : it will convert character to string datatype.
+
+eg:    char x = 'b';
+       String str = new String();
+       String two = str.toChar(x);
+       
+3. .concat() : it will concate two different strings.
+
+eg      String str = "Hello";
+		String three = str.concat("World");   // Hello World
+		
+4. toUpperCase() : it will convert all the lower case to upper case of string if possible.
+eg:     String str = "Hello";
+        String four = str.toUpperCase(str)   // HELLO;
+        
+ 
+5. toLowerCase() : it will convert all ther upper case to lower case of string if possible.
+
+eg:      String str = "Hello";
+		 String five = str.toLoweerCase(str)   // hello;
+		 
+--------------------------------------------------------------------------
+
+(b) equals : this operator is used for checking string values that it is equal or not.
+    
+    ==  : # This operator is used for checking all the values that they are equal or not.
+          # it can use for all primitive data types.
+          
+  OUTPUT :-
+  
+  Code 1 = false;
+  
+  explanation : as both the content of String will share same string object in SCP area
+  				. But as (new) operator is using so both will create a different object in heap
+  				area of primaray memory .
+  				
+  	
+  Code 2 = true; 
+  
+  explanation : as here we are using string builder so it will use same object area in SCP.
+  				. But different in heap area. As it is non sync and not threat proteced
+				it will share same.
+				
+	
+  Code 3 = false;
+  
+  explanation : here (==) operator is used and it not support String type so it show 
+  		   		error.
+  		   		
+  		   		 
+ 
+ 
+ 
+ 
+ 
+ 
+    

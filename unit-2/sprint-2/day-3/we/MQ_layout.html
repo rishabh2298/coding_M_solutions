@@ -1,0 +1,94 @@
+<!-- MQ Layout-1  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MQ Layout-1</title>
+    <style>
+        body>div{
+            height:100px;
+            width:1000px;
+            margin:auto;
+            display:grid;
+            grid-template-columns:repeat(4, 1fr);
+            grid-template-rows:50px 200px;
+            gap: 20px;
+            grid-template-areas: 
+            "ylw ylw ylw ylw"
+            "rd grn blu gry";
+        }
+        div+div{
+            padding:10px;
+            font-weight: 700;
+            font-size: 20px;
+        }
+        div>div:nth-child(1){
+            background-color: yellow;
+            grid-area: ylw;
+            font-size: 40px;
+        }
+        div>div:nth-child(2){
+            background-color: red;
+            grid-area: rd;
+        }
+        div>div:nth-child(3){
+            background-color: green;
+            grid-area: grn;
+        }
+        div>div:nth-child(4){
+            background-color: blue;
+            grid-area: blu;
+        }
+        div>div:nth-child(5){
+            background-color: gray;
+            grid-area: gry;
+        }
+
+        /* medium screens */
+        @media all and (min-width:521px) and (max-width:780px){
+            body>div{
+                height:530px;
+                width:100%;
+                background-color: bisque;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: 50px repeat(2, 200px);
+                grid-template-areas:
+                "ylw ylw"
+                "rd blu"
+                "grn gry";
+            }
+        }
+        /* Small Screen */
+        @media all and (min-width:250px) and (max-width:520px){
+            body>div{
+                height:580px;
+                width:100%;
+                grid-template-columns:1fr;
+                grid-template-rows: repeat(5,100px);
+                grid-template-areas:
+                "ylw"
+                "rd"
+                "gry"
+                "grn"
+                "blu";
+            }
+            div>div:nth-child(1){ 
+                display: grid;
+                align-items: center;
+                padding:20px
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div>Navigation</div>
+        <div>Box 1</div>
+        <div>Box 2</div>
+        <div>Box 3</div>
+        <div>Box 4</div>
+    </div>
+</body>
+</html>

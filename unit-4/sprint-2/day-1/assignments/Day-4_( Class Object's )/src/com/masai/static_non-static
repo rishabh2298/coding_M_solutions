@@ -1,0 +1,43 @@
+When we defines variables as a class instance member it is of two types:-
+
+1. Static Variable :- # This type of variable will be loaded in the primary memory directly while
+						calling the java application. As it is a part of context area.
+					  
+					  # This variable can be call in three ways :-
+					  1. Directly by it's name.
+					  2. By class name dot(.) than variable name.
+					  3. By class object via referance variable.
+					  
+					  # This variable are available for all instance variable and methods.
+					  
+					  
+					  
+2. Instance Variable :- # This type of variable is not loaded in variable directly while calling
+						  of the application.
+						  To call this variable we have to create object of that class in which
+						  class this instance variable is created.
+						  This object must be create inside a method other wise it will give a
+						  compile time error called StackOverFLow error. Because of loop creation.
+						  
+						# To call this variable we have only one option ,i.e. by creating object.
+						
+						# This class variable can be access in all methods only by referance variable
+						  of that class.
+						  
+ Example -->   package com.masai
+ 
+ 		  class Main{
+ 		  
+ 		  	static int x = 100;      //  This is static variable (also called class variable )
+ 		  
+ 		  	byte y = 124          // This is instance variable (aslo called non-static variable ).
+ 		  
+ 		  	public static void main (String[] args){
+ 		  	
+ 		  	}
+ 		  	
+ 		  }					  
+ 		  
+ 		  
+ 		  
+ 		  

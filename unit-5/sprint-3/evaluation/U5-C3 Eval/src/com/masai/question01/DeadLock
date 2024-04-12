@@ -1,0 +1,10 @@
+
+DeadLock =>	# This is a concept introduced in Multi-threading. It will occure when multiple thread
+			  is working simultaneously and we need to lock some of it for easy working of program.
+			
+			# We can also make our system stable and prevent it from being crashed.
+			
+
+Example => In banking system when multi users are entering in bank servers for their need (withdrawl,
+			transfer, etc.)
+			 

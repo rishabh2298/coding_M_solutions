@@ -1,0 +1,34 @@
+
+Java Build Process :-
+==================
+
+1. Model => In this we have to create all bean classes of class of which we want values.
+
+2. Dao => Here we will create java files of interface and it's implementation part.
+		  All the business logics of out application will be there in implementation class
+		  
+3. Usecases => here we will use those methods of dao implementaion class and input from user
+			   and update record's and use methods accordingly
+			   
+			   
+Using Maven :-
+===========
+
+1. By using maven we don't have to code completely because it will create some of auto generated
+   code and make works which developer need's to do for every time repetedly.
+  
+2. By using maven cycle it will compile,test-compile , check our test case, then package all the files
+   in jar files and save jar file (installing) to it's repository.
+   
+3. It has 3 repository
+	A. Local Repository = while using any jar file by dependency it will check first in local repository
+	B. Central Repository = if jar file is not found in local then maven go for central repository
+	C. Server Repository = finally if file not found both in local and central then it will go for remote
+						   (server) repository.
+						   
+4. If we are using maven which is a built tool if we want to connect with database it don't throw 
+   much exception but it we don't use any built tool then while intracting with database it will 
+   throw exception which need to handle for making our application work better.
+   
+5. This built tools help by providing some auto code generator and reducing again and again creation 
+   of common code which developer need to create repeatedly.

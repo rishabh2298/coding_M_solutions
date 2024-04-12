@@ -1,0 +1,17 @@
+
+Life-cycle of a Thread
+======================
+
+In Java, a thread always exists in any one of the following states. These states are:
+
+1. New state => In this state a new Thread is declared and not start at this point.
+
+2. Runnable state => In this state that declared thread is send to the thread scheduler for it's scheduling
+					 purpose and there it is decided that when it will start performing and when to stop/wait.
+					 
+3. Running state => In this state that thread has been selected to run and perform it's task.
+
+4. Blocked state => In this state the running thread will be blocked from running state either 
+					conditionally (join), unconditionally (wait), for timed (sleep).
+					
+5. Dead state => In this state whole run() method will execute it's task completely.

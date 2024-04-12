@@ -1,0 +1,14 @@
+Wrapper Classes :-
+
+	1.	For primitive data-type there are some classes predefined in java.lang package of java
+		that classes is known as wrapper classes.
+
+	2.	This classes has some constant variables like MIN_VALUE & MAX_VALUE with help of which
+		we can get maximum and minimum (range) values of all the primitive data-types (except - 
+		boolean data-type, as it has only 2 values).
+
+	3.	In some cases we need primitive data-type in form of objects that's why this classes had
+		introduced.
+
+	4.	This classes also help in converting string numbers into specific primitive data-type.
+		eg :- String s= "1000" ------>   can be convert to integer data-type via, Wrapper classes.

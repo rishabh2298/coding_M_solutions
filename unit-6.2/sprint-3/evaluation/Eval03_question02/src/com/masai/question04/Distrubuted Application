@@ -1,0 +1,33 @@
+
+Distributed Application
+=======================
+
+When an application is running on servers and taking thousands of client request (in enterprise applications)
+then it is very difficult for a single server to handle such large no. of requests.
+
+So to solve this what developer will do is either increase the specification and configuration of computers
+on which servers are running or deployed application on many servers and this will handle thousands
+of request by distributing it among themselves by load balancer
+
+
+
+So this is called scaling of distributed application and it is of two types :-
+
+1. Vertical Scaling => # In this specification of particular computer is increased on which application
+					     is running on server.
+					   
+					   # It is good for smaller applications , But it is not feseable for 
+					     larger no of request.
+					   
+					   # And also if server got crashed then it will be difficult so server for some
+					     specific period of time.
+					     
+				
+  SO for that other scaling was introduced.
+  
+2. Horizontal Scaling => # In this several servers are running on different computers  on which our
+						   application is deployed.
+						   
+						 # If large no of request is come then with help of load balancer it will be
+						   distributed among least request handler and by this scaling will become
+						   more easier for maintain and handle.

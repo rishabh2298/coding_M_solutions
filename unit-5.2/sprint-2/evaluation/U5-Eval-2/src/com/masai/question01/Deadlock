@@ -1,0 +1,89 @@
+
+Deadlock =>	# This is concept which will occure due to synchronized method or synchronized block only.
+			
+			# Suppose if 2 threads are running simultaneously and there are synchronized method which 
+			  require object level lock to grant access to the thread and inside that method another
+			  method call which is also a synchronized method then there were required object level lock
+			  of that class but it was hold by 2nd thread which required object level lock of 1st thread
+			  which is hold by 1st thread at same time.
+			  		Then both the synchronized function can't be complete because of unavailability of
+			  lock at that time. Because of that those synchronized method can't be implemented completely
+			  and it creates a situation in which both the thread are dependent on each other and both
+			  the method can't be completed and this situation is called "Deadlock".
+			 
+			 
+Demo1.java
+==========
+package com.masai.question01;
+
+public class Demo1 extends Thread {
+
+	Demo2 demo2;
+	
+	public Demo1() {
+		
+	}
+	
+	public Demo1(Demo2 d2) {
+		this.demo2 = d2;
+	}
+	
+	public void run() {
+		System.out.println("Indside Demo1");
+		this.func1(demo2);
+		
+	}
+	
+	public synchronized void func1(Demo2 demo2) {
+		demo2.func2(this);
+	}
+	
+}
+
+
+Demo2.java
+==========
+package com.masai.question01;
+
+public class Demo2 extends Thread {
+
+	Demo1 demo1;
+	
+	public Demo2() {
+		
+	}
+	
+	public Demo2(Demo1 d1) {
+		this.demo1 = d1;
+	}
+	
+	public void run() {
+		System.out.println("Inside run of Demo2");
+		this.func2(demo1);
+		
+	}
+	
+	public synchronized void func2(Demo1 demo1) {
+		demo1.func1(this);
+	}
+}
+
+Main.java
+=========
+package com.masai.question01;
+
+public class Main {
+	
+	public static void main(String[] args) {
+		
+		Demo1 d1 = new Demo1();
+		Demo2 d2 = new Demo2();
+		
+		Thread t1 = new Demo1(d2);
+		Thread t2 = new Demo2(d1);
+		
+		t1.start();  // It hold's object level key of demo1;
+		t2.start();  // It hold's object level key of demo2;
+	}
+
+}

@@ -1,0 +1,64 @@
+
+Binding : it is the process of method implementation and method call.
+
+Early Binding : # When which method needs to be call is decided at compile time by compiler it is called early binding,
+				  or static polymorphism or method overloading.
+				# In this same method name is declare but with different parameters.
+				# all the methods have different type of output but method name will be same;
+		
+ Ex :- 
+ class Main{
+ 
+ 	void run(){
+ 		System.out.println("method with 0 argument");
+ 	}
+ 	
+ 	void run (int i){
+ 		System.out.println("Method with int i argument");
+ 	}
+ 	
+ 	
+ 	public static void main(String[] args){
+ 		Main m = new Main();
+ 		
+ 		m.run();			// this is early binding;
+ 		m.run(int i);
+ 	}
+ 
+ }
+		
+				
+
+Late Binding : # When which method will be called is decide at runtime by jvm then it is called late binding, or dynamic
+				 polmorphism or method overriding because method call is decide at runtime.
+		       # In this same method is declare with same parameters but in different class;
+		       # which method will be called is depend upon reference variable and latest overriden method according to that
+		         reference variable.
+		         
+		         
+Ex = 
+
+class Main{
+ 
+ 	void run(){
+ 		System.out.println("method with 0 argument");
+ 	}
+ 	
+ }
+	
+class Demo extends Main{
+	
+	@Override
+	void run(){
+		System.out.println("method with override");
+	}
+	
+	
+	public static void main(String[] args){
+ 		Demo d1 = new Demo();
+ 		
+ 		d1.run();  // it will call overriden method of demo class which is close to d1
+ 	}
+	
+}	         
+		 

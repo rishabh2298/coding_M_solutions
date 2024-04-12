@@ -1,0 +1,26 @@
+
+Some of the predefined functional interface in java are :-
+
+1. interface Predicate<T>{
+
+	public abstract boolean test(T t);
+
+}
+
+2. interface Consumer<T>{
+
+	public abstract void accept(T t);
+
+}
+
+3. interface Supplier<T>{
+	
+	public abstract T get();
+	
+}
+
+4. interface Function<T,R>{
+	
+	public abstract R apply(T t);
+
+}

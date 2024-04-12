@@ -1,0 +1,20 @@
+
+Abstract Class = # Class which has abstract key is known as abstract class. 
+				 # It has method signature without body which is called abstract method.
+				 # This class may or may not have abstract class.
+				 # We can achieve 0 to 100% abstraction through abstract class.
+				 # If we want we can define concrete method in abstract class also.
+				 # We cannot mark abstract class or abstract method as "final", because an abstract class is need to be
+				   extended otherwise it is of no use.
+				 # When an abstract class is extended then it's child class must override all the abstract methods of 
+				   that abstract class and it's parent abstract classes.
+				   
+			
+Interface = # When instead of class there is keyword "interface" that is called interface.
+			# We can achieve 100% abstraction through interface.
+			# Through JDK 1.7 there is only variables and abstract methods in an interface, but from JDK 1.8 there is
+			  2 new type of concrete methods are introduced in interface i.e, with keyword "default" and "static".
+			# We cannot implement any interface to other interface nor extend any class to interface, but
+		      we can extend more than one interface to other interface simultaneously and this is called Multiple
+		      Inheritance. So we can achieve multiple and hybrid inheritance via interface.
+		    # Other properties of interface is same as abstract class.
