@@ -110,3 +110,16 @@ ORDER BY
 LIMIT
 	1 OFFSET 2;
 
+
+
+-- Problem 8 : Create a query that displays the second company with the lowest Price
+--  from the Stock table. Use the LIMIT and OFFSET clauses for this exercise.
+
+SELECT
+ 	*
+FROM
+	Stock
+ORDER BY
+	price ASC
+LIMIT
+	1 OFFSET 1
