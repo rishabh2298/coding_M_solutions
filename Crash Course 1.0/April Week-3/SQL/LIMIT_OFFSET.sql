@@ -63,3 +63,14 @@ FROM
 ORDER BY
 	Sector DESC
 LIMIT 5 OFFSET 0;
+
+
+
+-- Problem 5 : Create a query that skips the first three records of the Stock 
+-- table and displays the next five records.
+
+SELECT
+	*
+FROM
+	Stock
+LIMIT 5 OFFSET 3;
