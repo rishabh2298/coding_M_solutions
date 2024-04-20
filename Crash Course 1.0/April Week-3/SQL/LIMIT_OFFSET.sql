@@ -35,3 +35,17 @@ FROM
 ORDER BY
    Price DESC
 LIMIT 5 OFFSET 0;
+
+
+
+-- Problem 3 : Create a query that displays the first three records in the Stock 
+-- table that have the highest EPS (earnings per share) value. Sort the result in 
+-- descending order by the EPS column.
+
+SELECT
+   	*
+FROM
+	Stock
+ORDER BY
+	EPS DESC
+LIMIT 3 OFFSET 0;
