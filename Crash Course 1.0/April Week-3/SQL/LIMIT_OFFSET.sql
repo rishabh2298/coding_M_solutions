@@ -171,3 +171,24 @@ ORDER BY
 	max_salary DESC
 LIMIT
 	5 OFFSET 0;
+
+
+
+-- Problem 4 : The following query is given:
+-- SELECT
+--   *,
+--   (min_salary + max_salary) / 2.0 AS avg_salary
+-- FROM
+--   job;
+-- Convert the given query to display all the data for the fourth highest paying 
+-- job in terms of avg_salary value.
+
+SELECT
+	*, (max_salary + min_salary)/2 AS avg_salary
+FROM
+	job
+ORDER BY
+	max_salary DESC
+LIMIT
+	1 OFFSET 3;
+    
