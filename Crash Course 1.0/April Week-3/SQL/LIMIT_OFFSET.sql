@@ -1,4 +1,6 @@
 
+-- Link : https://www.notion.so/LIMIT-OFFSET-6622694014394c999aed6319be08f2ea
+
 -- LIMIT OFFSET
 
 -- DROP TABLE IF EXISTS Stock;
@@ -191,4 +193,3 @@ ORDER BY
 	max_salary DESC
 LIMIT
 	1 OFFSET 3;
-    
