@@ -74,3 +74,24 @@ SELECT
 FROM
 	Stock
 LIMIT 5 OFFSET 3;
+
+
+
+-- Problem 6 : Create a query that displays the following columns from the Stock 
+-- table:
+-- * Ticker
+-- * Price
+-- * EPS
+-- Sort the result by the EPS column in descending order. Then skip the first 
+-- three records and display the next five records.
+
+SELECT
+	ticker
+    price
+    eps
+FROM
+	Stock
+ORDER BY
+	EPS DESC
+LIMIT 
+	5 OFFSET 3;
