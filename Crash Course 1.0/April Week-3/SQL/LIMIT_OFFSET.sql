@@ -49,3 +49,17 @@ FROM
 ORDER BY
 	EPS DESC
 LIMIT 3 OFFSET 0;
+
+
+
+-- Problem 4 : Create a query that displays the following columns from the Stock
+
+SELECT
+	Sector,
+    fullname,
+    Price
+FROM
+	Stock
+ORDER BY
+	Sector DESC
+LIMIT 5 OFFSET 0;
