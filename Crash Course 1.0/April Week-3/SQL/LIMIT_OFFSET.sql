@@ -139,3 +139,16 @@ FROM
 LIMIT
 	10 OFFSET 0;
 
+
+
+-- Problem 2 : Create a query that displays the top five highest paying positions 
+-- (take into account the max_salary column)
+
+SELECT
+	*
+FROM
+	job
+ORDER BY
+	max_salary DESC
+LIMIT
+	5 OFFSET 0;
