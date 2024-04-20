@@ -95,3 +95,18 @@ ORDER BY
 	EPS DESC
 LIMIT 
 	5 OFFSET 3;
+
+
+
+-- Problem 7 : Create a query that displays the third company with the highest EPS 
+-- from the Stock table. Use the LIMIT and OFFSET clauses for this exercise.
+
+SELECT
+	*
+FROM
+	Stock
+ORDER BY
+	EPS DESC
+LIMIT
+	1 OFFSET 2;
+
