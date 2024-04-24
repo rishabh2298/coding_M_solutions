@@ -48,3 +48,13 @@ SELECT
 	ROUND(AVG(price),2) AS AvgPrice
 FROM
 	Stock;
+
+
+
+-- Problem 6 : Create a query that displays the lowest and highest values for EPS in the 
+-- table. Assign the MinEPS and MaxEPS aliases respectively.
+
+SELECT
+	MIN(EPS) AS MinEPS, MAX(EPS) AS MaxEPS
+FROM
+	Stock;
