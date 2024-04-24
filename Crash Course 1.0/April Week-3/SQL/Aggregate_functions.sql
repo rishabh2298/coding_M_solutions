@@ -38,3 +38,13 @@ SELECT
 	COUNT(DISTINCT sector) AS NumberOfSectors
 FROM
 	Stock;
+
+
+
+-- Problem 5 : Create a query that displays the average value for the Price column. Assign 
+-- the alias AvgPrice to the result.
+
+SELECT
+	ROUND(AVG(price),2) AS AvgPrice
+FROM
+	Stock;
