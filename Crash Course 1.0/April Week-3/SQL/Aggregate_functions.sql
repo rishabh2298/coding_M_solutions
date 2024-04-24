@@ -18,3 +18,14 @@ FROM
 	Stock
 WHERE
 	EPS NotNULL;
+
+
+
+-- Problem 3 :Create a query that displays the number of NULL values in the EPS column. 
+-- Assign the alias MissingEPS to the result.
+
+SELECT
+	(COUNT(*) - COUNT(EPS)) AS MissingEPS
+FROM
+	Stock
+
