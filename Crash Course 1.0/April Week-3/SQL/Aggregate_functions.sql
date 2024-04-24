@@ -58,3 +58,17 @@ SELECT
 	MIN(EPS) AS MinEPS, MAX(EPS) AS MaxEPS
 FROM
 	Stock;
+
+
+
+-- Problem 7 : Create a query that displays the following columns from the Stock table:
+-- * Id
+-- * Ticker
+-- * FullName
+-- Also add a fourth column to the result that is the number of characters in the 
+-- Ticker. Assign the alias TickerLength to the fourth column.
+
+SELECT
+	Id, Ticker, Fullname, LENGTH(ticker) AS TickerLength
+FROM
+	Stock
