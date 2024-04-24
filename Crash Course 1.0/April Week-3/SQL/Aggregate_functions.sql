@@ -29,3 +29,12 @@ SELECT
 FROM
 	Stock
 
+
+
+-- Problem 4 : Create a query that displays the number of unique values for the Sector column 
+-- and assign an alias NumberOfSectors to the result.
+
+SELECT
+	COUNT(DISTINCT sector) AS NumberOfSectors
+FROM
+	Stock;
