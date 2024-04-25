@@ -26,3 +26,18 @@ GROUP BY
 	sector
 ORDER BY
 	NumOfStocks DESC;
+
+
+    
+-- Problem 3 : Group data at the Sector level. Then find the average EPS for each sector and 
+-- assign the alias AvgEPSPerSector. Sort the result by the AvgEPSPerSector column 
+-- in descending order.
+
+SELECT
+	Sector, AVG(EPS) AS AvgEPSPerSector
+FROM
+	Stock
+GROUP BY
+	sector
+Order BY
+	AvgEPSPerSector DESC;
