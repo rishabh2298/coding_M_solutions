@@ -41,3 +41,18 @@ GROUP BY
 	sector
 Order BY
 	AvgEPSPerSector DESC;
+
+
+
+-- Problem 1 : Group data from the employee table at the department_id level and calculate the 
+-- number of employees for each department. Assign the alias number_of_employees 
+-- to this column. Sort the result in descending order by number_of_employees.
+
+SELECT
+	department_id, COUNT(*) AS number_of_employees
+FROM
+	employee
+GROUP BY
+	department_id
+ORDER BY
+	number_of_employees DESC;
