@@ -75,3 +75,15 @@ ORDER BY
 	AVG(salary) DESC;
 
 ---------------------------------------------------------------------------------------------------------------
+
+
+
+-- Problem 1 : Group data from the sale table at product_id level. Calculate the number of 
+-- orders for each product and assign the alias number_of_orders.
+
+SELECT
+	product_id, COUNT(*) AS number_of_orders
+FROM
+	sale
+GROUP BY
+	product_id;
