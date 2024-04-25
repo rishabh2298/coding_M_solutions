@@ -44,6 +44,8 @@ Order BY
 
 
 
+---------------------------------------------------------------------------------------------------------------
+
 -- Problem 1 : Group data from the employee table at the department_id level and calculate the 
 -- number of employees for each department. Assign the alias number_of_employees 
 -- to this column. Sort the result in descending order by number_of_employees.
@@ -56,3 +58,20 @@ GROUP BY
 	department_id
 ORDER BY
 	number_of_employees DESC;
+
+
+
+-- Problem 2 : Group data from the employee table at the job_id level. Calculate the average 
+-- salary for each position and assign the alias avg_salary. Sort the result by 
+-- descending avg_salary.
+
+SELECT
+	job_id, AVG(salary)
+FROM
+	employee
+GROUP BY
+	job_id
+ORDER BY
+	AVG(salary) DESC;
+
+---------------------------------------------------------------------------------------------------------------
