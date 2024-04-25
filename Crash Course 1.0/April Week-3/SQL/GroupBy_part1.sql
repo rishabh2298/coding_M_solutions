@@ -87,3 +87,31 @@ FROM
 	sale
 GROUP BY
 	product_id;
+
+
+
+-- Problem 2 : The following query is given:
+
+-- SELECT
+--   product_id,
+--   COUNT(*) AS number_of_orders
+-- FROM
+--   sale
+-- GROUP BY
+--   product_id;
+
+-- Transform this query to extract the first three records with the highest value 
+-- for the number_of_orders column.
+
+SELECT
+  	product_id,
+  	COUNT(*) AS number_of_orders
+FROM
+  	sale
+GROUP BY
+  	product_id
+ORDER BY
+	number_of_orders DESC
+LIMIT
+	3 OFFSET 0;
+    
