@@ -76,3 +76,22 @@ HAVING
   avg_salary BETWEEN 10000 AND 20000
 ORDER BY
   avg_salary DESC;
+
+
+
+-- Problem 4 : Group the data in the sale table at product_id level. Calculate the number of 
+-- orders for each product and assign it to a column named number_of_orders. Then,
+--  using the HAVING clause, extract products with a number of orders greater than
+--  one. Sort the result in descending order by number_of_orders.
+
+SELECT
+	product_id, COUNT(*) AS number_of_orders
+FROM
+	sale
+GROUP BY
+	product_id
+HAVING
+	number_of_orders > 1
+ORDER BY
+	number_of_orders DESC;
+    
