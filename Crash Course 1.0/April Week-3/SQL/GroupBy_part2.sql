@@ -18,4 +18,32 @@ HAVING
 	AvgEPSPerSector > 10
 Order BY
 	AvgEPSPerSector DESC;
-    
+
+
+
+-- Problem 2 : The following query is given:
+
+-- SELECT
+--   job_id,
+--   AVG(salary) AS avg_salary
+-- FROM
+--   employee
+-- GROUP BY
+--   job_id
+-- ORDER BY
+--   avg_salary DESC;
+
+-- Modify this query to display those job_id values for which the average salary 
+-- is greater than 10,000.
+
+SELECT
+  job_id,
+  AVG(salary) AS avg_salary
+FROM
+  employee
+GROUP BY
+  job_id
+HAVING
+  avg_salary > 10000
+ORDER BY
+  avg_salary DESC;
