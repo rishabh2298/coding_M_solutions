@@ -27,3 +27,25 @@ WHERE
       	WHERE
       		salary > 10000
     );
+
+
+
+-- Problem 2 : Please follow the steps below.
+-- 1. Create a query that returns the values for the job_id from the employee table 
+-- where the salary is greater than 10,000.
+-- 2. Using the result of the previous query as a subquery, display the names of 
+-- all positions for which the above condition is met.
+    
+SELECT
+	job_title, job_id
+FROM
+	job
+WHERE
+	job_id IN (
+      SELECT
+        job_id
+      FROM
+        job
+      WHERE
+        min_salary > 10000
+    );
