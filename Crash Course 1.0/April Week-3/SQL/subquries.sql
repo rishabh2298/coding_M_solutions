@@ -49,3 +49,37 @@ WHERE
       WHERE
         min_salary > 10000
     );
+
+
+
+-----------------------------------------------------------------------------------------------------
+
+
+-- Problem 3 : The following query is given:
+
+-- SELECT
+--   product_id,
+--   COUNT(*) AS number_of_orders
+-- FROM
+--   sale
+-- GROUP BY
+--   product_id;
+
+-- Modify this query to display only the first three values for the product_id 
+-- with the highest value for the number_of_orders column.
+
+SELECT
+	product_id
+FROM
+	(
+    SELECT
+      product_id, COUNT(*) AS number_of_orders
+    FROM
+      sale
+    GROUP BY
+      product_id
+    ORDER BY
+      number_of_orders DESC
+    )
+LIMIT
+	3 OFFSET 0;
