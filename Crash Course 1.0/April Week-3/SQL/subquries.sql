@@ -83,3 +83,39 @@ FROM
     )
 LIMIT
 	3 OFFSET 0;
+
+
+
+-- Problem 4 : The following query is given:
+
+-- SELECT
+--   product_id
+-- FROM
+--   sale
+-- GROUP BY
+--   product_id
+-- ORDER BY
+--   COUNT(*) DESC
+-- LIMIT
+--   3;
+
+-- Display all data from the product table about the products returned by the 
+-- above query
+
+SELECT
+	*
+FROM
+	product
+WHERE
+ 	product_id IN (
+      SELECT
+          product_id
+      FROM
+          sale
+      GROUP BY
+          product_id
+      ORDER BY
+          COUNT(*) DESC
+      LIMIT
+          3 OFFSET 0
+    )
