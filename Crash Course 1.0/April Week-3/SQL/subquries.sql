@@ -158,3 +158,44 @@ WHERE
         COUNT(*) = 1
     );
     
+
+
+-- Problem 7 : The following query is given:
+
+-- SELECT
+--   *
+-- FROM
+--   product
+-- WHERE
+--   product_id IN (
+--     SELECT
+--       product_id
+--     FROM
+--       sale
+--     GROUP BY
+--       product_id
+--     HAVING
+--       COUNT(*) == 1
+--   );
+
+
+-- Modify this query so that the result only includes information for two columns:
+-- * product_name
+-- * list_price
+
+SELECT
+	product_name, list_price
+FROM
+	product
+WHERE
+	product_id IN (
+    SELECT
+        product_id
+    FROM
+        sale
+    GROUP BY
+        product_id
+    HAVING
+        COUNT(*) = 1
+    );
+    
