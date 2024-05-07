@@ -119,3 +119,20 @@ WHERE
       LIMIT
           3 OFFSET 0
     )
+
+
+
+
+-- Problem 5 : Group data from the sale table at product_id level. Calculate the number of 
+-- orders for each product and assign the alias number_of_orders. Using the HAVING 
+-- clause, display only those products that appeared once in the table (one order).
+
+SELECT
+	product_id, COUNT(*) AS number_of_orders
+FROM
+	sale
+GROUP BY
+	product_id
+HAVING
+	number_of_orders = 1;
+	
