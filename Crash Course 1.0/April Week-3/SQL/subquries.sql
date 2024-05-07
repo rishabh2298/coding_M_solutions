@@ -136,3 +136,25 @@ GROUP BY
 HAVING
 	number_of_orders = 1;
 	
+
+  
+-- Problem 6 : Using the previous exercise and subqueries, create a query that displays all 
+-- information about the products from the product table that were purchased only 
+-- once (the sale table).
+
+SELECT
+	*
+FROM
+	product
+WHERE
+	product_id IN (
+    SELECT
+        product_id
+    FROM
+        sale
+    GROUP BY
+        product_id
+    HAVING
+        COUNT(*) = 1
+    );
+    
